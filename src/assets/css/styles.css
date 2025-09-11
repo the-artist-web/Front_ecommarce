@@ -181,7 +181,7 @@ body {
  * DUBLICATE ITEMS
 \* ------------------------------------------------------------ */
 
-.section {  }
+.section { padding-block: ; }
 
 .container {
     padding-inline: 16px !important;
