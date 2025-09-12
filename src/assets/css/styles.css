@@ -145,6 +145,8 @@ textarea { resize: none !important; }
 
 button { cursor: pointer; }
 
+form { width: 100%; }
+
 html {
     scroll-behavior: smooth; 
     font-size: 62.5%;
