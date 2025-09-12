@@ -211,6 +211,8 @@ h1,
     font-size: var(--fs-h1) !important;
     font-weight: var(--fw-bold) !important;
     line-height: var(--lh-h1) !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 h2,
@@ -218,6 +220,8 @@ h2,
     font-size: var(--fs-h2) !important;
     font-weight: var(--fw-bold) !important;
     line-height: var(--lh-h2) !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 h3,
@@ -225,6 +229,8 @@ h3,
     font-size: var(--fs-h3) !important;
     font-weight: var(--fw-semi-bold) !important;
     line-height: var(--lh-h3) !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 h4,
@@ -232,6 +238,8 @@ h4,
     font-size: var(--fs-h4) !important;
     font-weight: var(--fw-semi-bold) !important;
     line-height: var(--lh-h4) !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 h5,
@@ -239,6 +247,8 @@ h5,
     font-size: var(--fs-h5) !important;
     font-weight: var(--fw-medium) !important;
     line-height: var(--lh-h5) !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 h6,
@@ -246,6 +256,8 @@ h6,
     font-size: var(--fs-h6) !important;
     font-weight: var(--fw-medium) !important;
     line-height: var(--lh-h6) !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 p,
@@ -253,13 +265,17 @@ p,
     font-size: var(--fs-p) !important;
     font-weight: var(--fw-regular) !important;
     line-height: var(--lh-p) !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 small,
 .small {
     font-size: var(--fs-small) !important;
-    font-weight: var(--fw-regular) !important;
+    font-weight: var(--fw-light) !important;
     line-height: var(--lh-small) !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 /* ------------------------------------------------------------ *\
