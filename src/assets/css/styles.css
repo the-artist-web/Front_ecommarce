@@ -128,7 +128,8 @@ textarea {
 
 input,
 select,
-textarea {
+textarea,
+[contenteditable="true"] {
     outline: none !important;
     width: 100%;
 }
@@ -144,6 +145,8 @@ select[selected] { color: var() !important; }
 textarea { resize: none !important; }
 
 button { cursor: pointer; }
+
+button:disabled { pointer-events: none; }
 
 form { width: 100%; }
 
