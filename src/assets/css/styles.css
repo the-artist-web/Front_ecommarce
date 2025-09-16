@@ -203,6 +203,14 @@ body {
     width: 100%;
 }
 
+.custom-scrollbar-hidden::-webkit-scrollbar { display: none; }
+
+.custom-scrollbar::-webkit-scrollbar {}
+
+.custom-scrollbar::-webkit-scrollbar-track {}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {}
+
 .main { min-height: ; }
 
 .title-section { margin-block-end: ; }
