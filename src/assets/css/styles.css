@@ -211,6 +211,10 @@ body {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {}
 
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:active {}
+
 .main { min-height: ; }
 
 .title-section { margin-block-end: ; }
