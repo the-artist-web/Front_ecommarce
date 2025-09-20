@@ -244,9 +244,9 @@ body {
 
 :has(> .state-layer):hover > .state-layer { opacity: 0.12; }
 
-:has(> .state-layer):is(:focus, :focus-visible, :focus-within) > .state-layer { opacity: 0.16; }
+:has(> .state-layer):is(:focus, :focus-visible, :focus-within) > .state-layer { opacity: 0.14; }
 
-:has(> .state-layer):active > .state-layer { opacity: 0.20; }
+:has(> .state-layer):active > .state-layer { opacity: 0.18; }
 
 /* ------------------------------------------------------------ *\
  * UTILITIES - TYPOGRAPHY
