@@ -28,7 +28,6 @@
     --fw-semi-bold: 600;
     --fw-medium: 500;
     --fw-regular: 400;
-    --fw-light: 300;
 
     /* Line Height */
     --lh-h1: 40px;
@@ -309,7 +308,7 @@ h6,
 p,
 .p {
     font-size: var(--fs-p) !important;
-    font-weight: var(--fw-regular) !important;
+    font-weight: var(--fw-medium) !important;
     line-height: var(--lh-p) !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -318,7 +317,7 @@ p,
 small,
 .small {
     font-size: var(--fs-small) !important;
-    font-weight: var(--fw-light) !important;
+    font-weight: var(--fw-regular) !important;
     line-height: var(--lh-small) !important;
     padding: 0 !important;
     margin: 0 !important;
