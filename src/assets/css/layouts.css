@@ -32,13 +32,17 @@
 
 .form-box .form-control:where(:hover, :focus-visible) { border-color: var(--text-color) !important; }
 
-.form-box .form-control.success { border-color: var(--other-color) !important; }
+.form-box .form-control.success { border-color: var(--success-color) !important; }
 
-.form-box .form-control.success::placeholder { color: var(--other-color) !important; }
+.form-box .form-control.success::placeholder { color: var(--success-color) !important; }
 
-.form-box .form-control.error { border-color: var(--main-color) !important; }
+.form-box .form-control.warning { border-color: var(--warning-color) !important; }
 
-.form-box .form-control.error::placeholder { color: var(--main-color) !important; }
+.form-box .form-control.warning::placeholder { color: var(--warning-color) !important; }
+
+.form-box .form-control.error { border-color: var(--error-color) !important; }
+
+.form-box .form-control.error::placeholder { color: var(--error-color) !important; }
 
 /* Input Group */
 
@@ -61,9 +65,11 @@
 
 .validation.show { display: block; }
 
-.validation.success { color: var(--other-color); }
+.validation.success { color: var(--success-color); }
 
-.validation.error { color: var(--main-color); }
+.validation.warning { color: var(--warning-color); }
+
+.validation.error { color: var(--error-color); }
 
 /**
  * COMPONENTS

@@ -9,7 +9,9 @@
     
     /* Primary */
     --main-color: #e43131; 
-    --other-color: #31e443; 
+    --success-color: #31e443; 
+    --warning-color: #e4cc31; 
+    --error-color: #e43131;
 
     /* Neutral */
     --bg-color: #ffffff;
@@ -333,7 +335,11 @@ small,
  */
 .text-main-color { color: var(--main-color) !important; }
 
-.text-other-color { color: var(--other-color) !important; }
+.text-success-color { color: var(--success-color) !important; }
+
+.text-warning-color { color: var(--warning-color) !important; }
+
+.text-error-color { color: var(--error-color) !important; }
 
 .text-bg-color { color: var(--bg-color) !important; }
 
@@ -350,7 +356,11 @@ small,
  */
 .bg-main-color { background-color: var(--main-color) !important; }
 
-.bg-other-color { background-color: var(--other-color) !important; }
+.bg-success-color { background-color: var(--success-color) !important; }
+
+.bg-warning-color { background-color: var(--warning-color) !important; }
+
+.bg-error-color { background-color: var(--error-color) !important; }
 
 .bg-color { background-color: var(--bg-color) !important; }
 
@@ -367,7 +377,11 @@ small,
  */
 .border-main-color { border-color: var(--main-color) !important; }
 
-.border-other-color { border-color: var(--other-color) !important; }
+.border-success-color { border-color: var(--success-color) !important; }
+
+.border-warning-color { border-color: var(--warning-color) !important; }
+
+.border-error-color { border-color: var(--error-color) !important; }
 
 .border-color { border-color: var(--bg-color) !important; }
 

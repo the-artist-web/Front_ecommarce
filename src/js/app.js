@@ -8,7 +8,6 @@ import {
     StartCard,
     closeStartCode,
     validationStartCode,
-    submitStartCode,
 } from "./components/StartCard.js";
 
 /**
@@ -23,7 +22,6 @@ setTimeout(() => StartCard($overlayStartCard, $startCard), 3000);
 
 validationStartCode($startCardForm);
 
-$startCardForm.addEventListener("submit", (e) => submitStartCode(e, $startCardForm));
 $closeStartCard.addEventListener("click", () => closeStartCode($overlayStartCard, $startCard));
 $overlayStartCard.addEventListener("click", () => closeStartCode($overlayStartCard, $startCard));
 
