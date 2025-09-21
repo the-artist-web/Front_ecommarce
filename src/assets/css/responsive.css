@@ -10,7 +10,15 @@
 /**
  * FIT SIZE: 992px
  */
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    /** 
+     * REUSED STYLE 
+     */
+    .main { 
+        padding-block-start: 130px;
+        min-height: calc(100dvh - 130px);
+    }
+}
 
 /**
  * FIT SIZE: 1440px
