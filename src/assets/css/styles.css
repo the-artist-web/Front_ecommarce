@@ -162,12 +162,13 @@ body {
     font-weight: normal;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-body[lang="en"] {
-    --font-family: "Kumbh Sans", sans-serif;
-    letter-spacing: 1px;
-}
+body.load { overflow-y: visible; }
+
+body[lang="en"] { --font-family: "Kumbh Sans", sans-serif; }
 
 /* body[lang="ar"] { --font-family: ; } */
 
@@ -208,8 +209,8 @@ body {
 }
 
 .main { 
-    padding-block-start: 80px;
-    min-height: calc(100dvh - 80px);
+    padding-block: 130px 70px;
+    min-height: 100dvh;
 }
 
 .title-section { margin-block-end: 44px; }
@@ -217,7 +218,12 @@ body {
 .custom-scrollbar-hidden::-webkit-scrollbar { display: none; }
 
 .custom-scrollbar::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
+    border-radius: var(--rounded-full);
+}
+
+.custom-scrollbar::-webkit-scrollbar-track { 
+    background-color: var(--border-color); 
     border-radius: var(--rounded-full);
 }
 

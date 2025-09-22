@@ -53,6 +53,16 @@
         id="up"
         lang="en"
     >
+        <!-- START LOAD -->
+        <div 
+            class="start-load" 
+            data-start-load
+        >
+            <div class="spinner-border">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
         <!-- START CARD -->
         <div 
             class="overlay-start-card"
@@ -182,6 +192,1213 @@
                 </div>
             </div>
         </div>
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-between gap-4">
+                        <div class="d-flex align-items-center">
+                            <a 
+                                href="./auth/sign-up.html"
+                                class="btn btn-light text-bg-color"
+                            >
+                                Sign up
+
+                                <div class="state-layer"></div>
+                            </a>
+
+                            <a 
+                                href="./auth/sign-in.html"
+                                class="btn btn-light text-bg-color"
+                            >
+                                Sign in
+
+                                <div class="state-layer"></div>
+                            </a>
+                        </div>
+
+                        <div></div>
+
+                        <div 
+                            class="d-none d-md-flex align-items-center"
+                            style="gap: 20px;"
+                        >
+                            <div class="dropdown" data-drop-select>
+                                <button
+                                    type="button"
+                                    class="btn btn-light text-bg-color"
+                                    data-bs-toggle="dropdown"
+                                    style="padding: 0 !important;"
+                                >
+                                    <div 
+                                        class="d-flex align-items-center gap-2"
+                                        data-change-inner
+                                    >
+                                        <img
+                                            src="https://themesflat.co/html/modave/images/country/us.svg"
+                                            loading="lazy"
+                                            class="img-cover"
+                                        />
+    
+                                        USD
+                                    </div>
+
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                </button>
+
+                                <ul 
+                                    class="dropdown-menu custom-scrollbar"
+                                    onclick="event.stopPropagation()"
+                                >
+                                    <li>
+                                        <button
+                                            type="button"
+                                            class="dropdown-item active"
+                                            data-drop-item
+                                        >
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img
+                                                    src="https://themesflat.co/html/modave/images/country/us.svg"
+                                                    loading="lazy"
+                                                    class="img-cover"
+                                                />
+            
+                                                <p class="text-uppercase">USD</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    
+                                    <li>
+                                        <button
+                                            type="button"
+                                            class="dropdown-item"
+                                            data-drop-item
+                                        >
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img
+                                                    src="https://themesflat.co/html/modave/images/country/vn.svg"
+                                                    loading="lazy"
+                                                    class="img-cover"
+                                                />
+            
+                                                <p class="text-uppercase">VND</p>
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dropdown" data-drop-select>
+                                <button
+                                    type="button"
+                                    class="btn btn-light text-bg-color"
+                                    data-bs-toggle="dropdown"
+                                    style="padding: 0 !important;"
+                                >
+                                    <div data-change-inner>English</div>
+
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                                </button>
+
+                                <ul 
+                                    class="dropdown-menu custom-scrollbar"
+                                    onclick="event.stopPropagation()"
+                                >
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="dropdown-item active"
+                                            data-drop-item
+                                            data-change-dirs="en"
+                                        >English</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="dropdown-item"
+                                            data-drop-item
+                                            data-change-dirs="ar"
+                                        >Arabic</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div 
+                class="header-bottom" 
+                data-fixed-scrolling
+            >
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <button
+                            type="button"
+                            class="icon-btn large d-lg-none"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#menu"
+                        >
+                            <span
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="Menu"
+                            >
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+                            </span>
+
+                            <div class="state-layer"></div>
+                        </button>
+
+                        <a 
+                            href="./index.html" 
+                            class="logo mx-lg-0"
+                            style="margin-inline-start: 39px;"
+                        >
+                            <img
+                                src="./src/assets/images/logo-text.png"
+                                alt="logo"
+                                loading="lazy"
+                                class="img-logo img-cover"
+                            />
+                        </a>
+
+                        <ul class="d-none d-lg-flex align-items-center gap-5">
+                            <li>
+                                <a 
+                                    href="./index.html"
+                                    class="nav-item active h6"
+                                >Home</a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="./shop.html"
+                                    class="nav-item h6"
+                                >Shop</a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="./blog.html"
+                                    class="nav-item h6"
+                                >Blog</a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="./our-store.html"
+                                    class="nav-item h6"
+                                >Our Store</a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="./faqs.html"
+                                    class="nav-item h6"
+                                >FAQs</a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="./about-us.html"
+                                    class="nav-item h6"
+                                >About Us</a>
+                            </li>
+
+                            <li>
+                                <a 
+                                    href="./contact-us.html"
+                                    class="nav-item h6"
+                                >Contact Us</a>
+                            </li>
+                        </ul>
+
+                        <ul class="d-flex align-item-center gap-4">
+                            <li>
+                                <button
+                                    type="button"
+                                    class="icon"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#searchbar"
+                                >
+                                    <span
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom"
+                                        data-bs-title="Search"
+                                    >
+                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                                    </span>
+                                </button>
+                            </li>
+
+                            <li class="d-none d-lg-block position-relative">
+                                <button
+                                    type="button"
+                                    class="icon"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                </button>
+
+                                <div class="drop-user">
+                                    <a
+                                        href="./auth/sign-in.html"
+                                        class="btn btn-main"
+                                    >Sign in</a>
+
+                                    <h6 class="text-second-color">
+                                        Don’t have an account? 
+                                        <a 
+                                            href="./auth/sign-up.html" 
+                                            class="d-inline text-color"
+                                        >Sign up</a>
+                                    </h6>
+                                </div>
+                            </li>
+
+                            <!-- بعد التسجيل شغل دي -->
+                            <!-- <li class="d-none d-lg-block">
+                                <a 
+                                    href="./profile.html"
+                                    class="icon"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    data-bs-title="Profile"
+                                >
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                                </a>
+                            </li> -->
+
+                            <li class="d-none d-lg-block">
+                                <a
+                                    href="./wishlist.html"
+                                    class="icon"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="bottom"
+                                    data-bs-title="Your Wishlist"
+                                >
+                                    <span
+                                        class="position-absolute badge"
+                                        style="top: -8px; right: -8px;"
+                                    >
+                                        +9
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+
+                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <button
+                                    type="button"
+                                    class="icon"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#shopping-cart"
+                                >
+                                    <span
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="bottom"
+                                        data-bs-title="Shopping Cart"
+                                    >
+                                        <span
+                                            class="position-absolute badge"
+                                            style="top: -8px; right: -8px;"
+                                        >
+                                            +9
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+
+                                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-bag"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" /><path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg>
+                                    </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- NAVBAR MOBILE -->
+        <nav 
+            class="navbar-mobile d-md-none" 
+            data-fixed-scrolling
+        >
+            <a 
+                href="./shop.html"
+                class="nav-item"
+            >
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-layout-grid"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /></svg>
+
+                <span class="line-clamp line-clamp-1">Shop</span>
+
+                <div class="state-layer"></div>
+            </a>
+
+            <button
+                type="button"
+                class="nav-item"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#categories"
+            >
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+
+                <span class="line-clamp line-clamp-1">Categories</span>
+
+                <div class="state-layer"></div>
+            </button>
+
+            <button
+                type="button"
+                class="nav-item"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#searchbar"
+            >
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+
+                <span class="line-clamp line-clamp-1">Search</span>
+
+                <div class="state-layer"></div>
+            </button>
+            
+            <a 
+                href="./wishlist.html"
+                class="nav-item"
+            >
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+
+                <span class="line-clamp line-clamp-1">Wishlist</span>
+
+                <div class="state-layer"></div>
+            </a>
+
+            <button
+                type="button"
+                class="nav-item"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#shopping-cart"
+            >
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-bag"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" /><path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg>
+
+                <span class="line-clamp line-clamp-1">Cart</span>
+
+                <div class="state-layer"></div>
+            </button>
+        </nav>
+
+        <!-- MENU -->
+        <aside 
+            class="offcanvas offcanvas-start menu" 
+            id="menu"
+        >
+            <div class="d-flex flex-column align-items-start gap-2">
+                <button
+                    type="button"
+                    class="icon-btn large"
+                    data-bs-dismiss="offcanvas"
+                >
+                    <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        data-bs-title="Close"
+                    >
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                    </span>
+
+                    <div class="state-layer"></div>
+                </button>
+
+                <form
+                    action=""
+                    method="GET"
+                    class="form-box"
+                >
+                    <input
+                        type="text"
+                        placeholder="What are you looking for?"
+                        name="search"
+                        value=""
+                        class="form-control"
+                    />
+
+                    <span class="absolute">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                    </span>
+                </form>
+            </div>
+
+            <div class="overflow-y-auto overflow-x-hidden custom-scrollbar">
+                <ul 
+                    class="d-flex flex-column"
+                    style="margin-inline: -20px;"
+                >
+                    <li>
+                        <a 
+                            href="./index.html"
+                            class="offcanva-item active h5"
+                        >
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
+                            href="./shop.html"
+                            class="offcanva-item h5"
+                        >
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
+                            href="./blog.html"
+                            class="offcanva-item h5"
+                        >
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
+                            href="./our-store.html"
+                            class="offcanva-item h5"
+                        >
+                            Our Store
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
+                            href="./faqs.html"
+                            class="offcanva-item h5"
+                        >
+                            FAQs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
+                            href="./about-us.html"
+                            class="offcanva-item h5"
+                        >
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
+                            href="./contact-us.html"
+                            class="offcanva-item h5"
+                        >
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="d-flex flex-column gap-5 pt-5">
+                    <div class="d-flex align-items-center gap-3">
+                        <a 
+                            href="./wishlist.html"
+                            class="btn btn-seconadry"
+                        >
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                            wishlist
+                        </a>
+                        
+                        <a 
+                            href="./auth/sign-in.html"
+                            class="btn btn-seconadry"
+                        >
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
+                            Sign in
+                        </a>
+                    </div>
+
+                    <div class="d-flex flex-column gap-3">
+                        <h5>Need Help?</h5>
+
+                        <p class="text-second-color">549 Oak St.Crystal Lake, IL 60014</p>
+
+                        <a 
+                            href="./contact-us.html"
+                            class="text-uppercase d-flex align-items-center gap-2"
+                        >
+                            <h5>GET DIRECTION</h5>
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 7l-10 10" /><path d="M8 7l9 0l0 9" /></svg>
+                        </a>
+
+                        <a
+                            href="mailto:"
+                            class="d-flex align-items-center gap-3 text-second-color"
+                        >
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                            <p>mail@gmail.com</p>
+                        </a>
+
+                        <a
+                            href="tel:"
+                            class="d-flex align-items-center gap-3 text-second-color"
+                        >
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-phone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
+                            <p>+111 542 2034</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div 
+                class="d-grid border-top border-2 border-color"
+                style="
+                    grid-template-columns: 1fr max-content 1fr;
+                    margin-inline: -20px;
+                "
+            >
+                <div class="col">
+                    <div class="dropdown" data-drop-select>
+                        <button
+                            type="button"
+                            class="btn btn-light w-100 h-100 rounded-0"
+                            data-bs-toggle="dropdown"
+                            style="padding: 0 !important;"
+                        >
+                            <div 
+                                class="d-flex align-items-center gap-2"
+                                data-change-inner
+                            >
+                                <img
+                                    src="https://themesflat.co/html/modave/images/country/us.svg"
+                                    loading="lazy"
+                                    class="img-cover"
+                                />
+    
+                                USD
+                            </div>
+    
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+
+                            <div class="state-layer"></div>
+                        </button>
+    
+                        <ul 
+                            class="dropdown-menu custom-scrollbar"
+                            onclick="event.stopPropagation()"
+                        >
+                            <li>
+                                <button
+                                    type="button"
+                                    class="dropdown-item active"
+                                    data-drop-item
+                                >
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img
+                                            src="https://themesflat.co/html/modave/images/country/us.svg"
+                                            loading="lazy"
+                                            class="img-cover"
+                                        />
+    
+                                        <p class="text-uppercase">USD</p>
+                                    </div>
+                                </button>
+                            </li>
+                            
+                            <li>
+                                <button
+                                    type="button"
+                                    class="dropdown-item"
+                                    data-drop-item
+                                >
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img
+                                            src="https://themesflat.co/html/modave/images/country/vn.svg"
+                                            loading="lazy"
+                                            class="img-cover"
+                                        />
+    
+                                        <p class="text-uppercase">VND</p>
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="border border-1 border-color h-100"></div>
+
+                <div class="col">
+                    <div class="dropdown" data-drop-select>
+                        <button
+                            type="button"
+                            class="btn btn-light w-100 h-100 rounded-0"
+                            data-bs-toggle="dropdown"
+                            style="padding: 0 !important;"
+                        >
+                            <div data-change-inner>English</div>
+    
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+
+                            <div class="state-layer"></div>
+                        </button>
+    
+                        <ul 
+                            class="dropdown-menu custom-scrollbar"
+                            onclick="event.stopPropagation()"
+                        >
+                            <li>
+                                <a
+                                    href="#"
+                                    class="dropdown-item active"
+                                    data-drop-item
+                                    data-change-dirs="en"
+                                >English</a>
+                            </li>
+                            
+                            <li>
+                                <a
+                                    href="#"
+                                    class="dropdown-item"
+                                    data-drop-item
+                                    data-change-dirs="ar"
+                                >Arabic</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- SEARCHBAR -->
+        <!-- SHOPPING CART -->
+        <aside 
+            class="offcanvas offcanvas-end shopping-cart" 
+            id="shopping-cart"
+        >
+            <div class="d-flex align-items-start justify-content-between">
+                <h4>Shopping Cart</h4>
+
+                <button
+                    type="button"
+                    class="icon-btn large"
+                    data-bs-dismiss="offcanvas"
+                >
+                    <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        data-bs-title="Close"
+                    >
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                    </span>
+
+                    <div class="state-layer"></div>
+                </button>
+            </div>
+
+            <ul class="overflow-y-auto overflow-x-hidden custom-scrollbar-hidden py-4">
+                <li>
+                    <div class="card-shopping-cart">
+                        <a href="./product-details.html">
+                            <img
+                                src="./src/assets/images/placeholder-img.jpg"
+                                alt=""
+                                loading="lazy"
+                                class="img-card img-cover"
+                            />
+                        </a>
+
+                        <div class="card-body">
+                            <div class="d-flex flex-column gap-3">
+                                <a 
+                                    href="./product-details.html" 
+                                    class="title-card line-clamp line-clamp-1 h5"
+                                >Contrasting sheepskin</a>
+
+                                <h6 class="text-second-color">XL/Blue</h6>
+                            </div>
+
+                            <div class="d-flex flex-column gap-3">
+                                <form 
+                                    action=""
+                                    method="POST"
+                                >
+                                    <button
+                                        type="button"
+                                        class="text-error-color h5"
+                                        style="text-decoration: underline !important;"
+                                    >Remove</button>
+                                </form>
+
+                                <h6 class="text-nowrap">1 X $60.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="border border-1 border-color w-100 my-4"></li>
+                
+                <li>
+                    <div class="card-shopping-cart">
+                        <a href="./product-details.html">
+                            <img
+                                src="./src/assets/images/placeholder-img.jpg"
+                                alt=""
+                                loading="lazy"
+                                class="img-card img-cover"
+                            />
+                        </a>
+
+                        <div class="card-body">
+                            <div class="d-flex flex-column gap-3">
+                                <a 
+                                    href="./product-details.html" 
+                                    class="title-card line-clamp line-clamp-1 h5"
+                                >Contrasting sheepskin</a>
+
+                                <h6 class="text-second-color">XL/Blue</h6>
+                            </div>
+
+                            <div class="d-flex flex-column gap-3">
+                                <form 
+                                    action=""
+                                    method="POST"
+                                >
+                                    <button
+                                        type="button"
+                                        class="text-error-color h5"
+                                        style="text-decoration: underline !important;"
+                                    >Remove</button>
+                                </form>
+
+                                <h6 class="text-nowrap">1 X $60.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="border border-1 border-color w-100 my-4"></li>
+                
+                <li>
+                    <div class="card-shopping-cart">
+                        <a href="./product-details.html">
+                            <img
+                                src="./src/assets/images/placeholder-img.jpg"
+                                alt=""
+                                loading="lazy"
+                                class="img-card img-cover"
+                            />
+                        </a>
+
+                        <div class="card-body">
+                            <div class="d-flex flex-column gap-3">
+                                <a 
+                                    href="./product-details.html" 
+                                    class="title-card line-clamp line-clamp-1 h5"
+                                >Contrasting sheepskin</a>
+
+                                <h6 class="text-second-color">XL/Blue</h6>
+                            </div>
+
+                            <div class="d-flex flex-column gap-3">
+                                <form 
+                                    action=""
+                                    method="POST"
+                                >
+                                    <button
+                                        type="button"
+                                        class="text-error-color h5"
+                                        style="text-decoration: underline !important;"
+                                    >Remove</button>
+                                </form>
+
+                                <h6 class="text-nowrap">1 X $60.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="border border-1 border-color w-100 my-4"></li>
+                
+                <li>
+                    <div class="card-shopping-cart">
+                        <a href="./product-details.html">
+                            <img
+                                src="./src/assets/images/placeholder-img.jpg"
+                                alt=""
+                                loading="lazy"
+                                class="img-card img-cover"
+                            />
+                        </a>
+
+                        <div class="card-body">
+                            <div class="d-flex flex-column gap-3">
+                                <a 
+                                    href="./product-details.html" 
+                                    class="title-card line-clamp line-clamp-1 h5"
+                                >Contrasting sheepskin</a>
+
+                                <h6 class="text-second-color">XL/Blue</h6>
+                            </div>
+
+                            <div class="d-flex flex-column gap-3">
+                                <form 
+                                    action=""
+                                    method="POST"
+                                >
+                                    <button
+                                        type="button"
+                                        class="text-error-color h5"
+                                        style="text-decoration: underline !important;"
+                                    >Remove</button>
+                                </form>
+
+                                <h6 class="text-nowrap">1 X $60.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="border border-1 border-color w-100 my-4"></li>
+                
+                <li>
+                    <div class="card-shopping-cart">
+                        <a href="./product-details.html">
+                            <img
+                                src="./src/assets/images/placeholder-img.jpg"
+                                alt=""
+                                loading="lazy"
+                                class="img-card img-cover"
+                            />
+                        </a>
+
+                        <div class="card-body">
+                            <div class="d-flex flex-column gap-3">
+                                <a 
+                                    href="./product-details.html" 
+                                    class="title-card line-clamp line-clamp-1 h5"
+                                >Contrasting sheepskin</a>
+
+                                <h6 class="text-second-color">XL/Blue</h6>
+                            </div>
+
+                            <div class="d-flex flex-column gap-3">
+                                <form 
+                                    action=""
+                                    method="POST"
+                                >
+                                    <button
+                                        type="button"
+                                        class="text-error-color h5"
+                                        style="text-decoration: underline !important;"
+                                    >Remove</button>
+                                </form>
+
+                                <h6 class="text-nowrap">1 X $60.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div 
+                class="d-flex flex-column gap-4 border-top border-2 border-color" 
+                style="
+                    margin-inline: -20px;
+                    padding: 20px 20px;
+                "
+            >
+                <div class="d-flex align-items-center justify-content-between">
+                    <h3>Subtotal</h3>
+
+                    <h3>$186,99</h3>
+                </div>
+
+                <div class="form-checkbox">
+                    <input 
+                        type="checkbox" 
+                        id="terms_of_use"
+                        value="" 
+                        name=""
+                        class="form-check-input" 
+                    />
+
+                    <label 
+                        for="terms_of_use"
+                        class="form-check-label" 
+                    >
+                        I agree with 
+                        <a 
+                            href="./terms-of-use.html" 
+                            class="d-inline"
+                            style="text-decoration: underline !important;"
+                        >Terms & Conditions</a>
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <!-- CATEGORIES -->
+        <aside 
+            class="offcanvas offcanvas-start categories" 
+            id="categories"
+        >
+            <div class="d-flex align-items-start justify-content-between mb-5">
+                <div class="d-flex align-items-center gap-3">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-horizontal"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 6l8 0" /><path d="M16 6l4 0" /><path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 12l2 0" /><path d="M10 12l10 0" /><path d="M17 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 18l11 0" /><path d="M19 18l1 0" /></svg>
+
+                    <h4>Categories</h4>
+                </div>
+
+                <button
+                    type="button"
+                    class="icon-btn large"
+                    data-bs-dismiss="offcanvas"
+                >
+                    <span
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="bottom"
+                        data-bs-title="Close"
+                    >
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                    </span>
+
+                    <div class="state-layer"></div>
+                </button>
+            </div>
+
+            <ul class="overflow-y-auto overflow-x-hidden custom-scrollbar">
+                <li class="border-bottom border-2 border-color pb-3 mb-3">
+                    <button 
+                        type="button" 
+                        class="d-flex flex-nowrap align-items-center justify-content-between w-100" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#categories-1"
+                    >
+                        <div class="d-flex align-items-center gap-3">
+                            <img
+                                src="./src/assets/images/placeholder-img.jpg"
+                                loading="lazy"
+                                class="avatar medium img-cover"
+                            />
+
+                            <h5 class="line-clamp line-clamp-1">For Men</h5>
+                        </div>
+
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                    </button>
+
+
+                    <div class="collapse" id="categories-1">
+                        <ul class="d-flex flex-column gap-4 pt-4 px-4">
+                            <li>
+                                <a 
+                                    href="#"
+                                    class="d-flex flex-nowrap align-items-center justify-content-between"
+                                >
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img
+                                            src="./src/assets/images/placeholder-img.jpg"
+                                            loading="lazy"
+                                            class="avatar medium img-cover"
+                                        />
+    
+                                        <h6 class="text-second-color line-clamp line-clamp-1">Men</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a 
+                                    href="#"
+                                    class="d-flex flex-nowrap align-items-center justify-content-between"
+                                >
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img
+                                            src="./src/assets/images/placeholder-img.jpg"
+                                            loading="lazy"
+                                            class="avatar medium img-cover"
+                                        />
+    
+                                        <h6 class="text-second-color line-clamp line-clamp-1">Men</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a 
+                                    href="#"
+                                    class="d-flex flex-nowrap align-items-center justify-content-between"
+                                >
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img
+                                            src="./src/assets/images/placeholder-img.jpg"
+                                            loading="lazy"
+                                            class="avatar medium img-cover"
+                                        />
+    
+                                        <h6 class="text-second-color line-clamp line-clamp-1">Men</h6>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="border-bottom border-2 border-color pb-3 mb-3">
+                    <button 
+                        type="button" 
+                        class="d-flex flex-nowrap align-items-center justify-content-between w-100" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#categories-2"
+                    >
+                        <div class="d-flex align-items-center gap-3">
+                            <img
+                                src="./src/assets/images/placeholder-img.jpg"
+                                loading="lazy"
+                                class="avatar medium img-cover"
+                            />
+
+                            <h5 class="line-clamp line-clamp-1">For Woman</h5>
+                        </div>
+
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                    </button>
+
+
+                    <div class="collapse" id="categories-2">
+                        <ul class="d-flex flex-column gap-4 pt-4 px-4">
+                            <li>
+                                <a 
+                                    href="#"
+                                    class="d-flex flex-nowrap align-items-center justify-content-between"
+                                >
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img
+                                            src="./src/assets/images/placeholder-img.jpg"
+                                            loading="lazy"
+                                            class="avatar medium img-cover"
+                                        />
+    
+                                        <h6 class="text-second-color line-clamp line-clamp-1">Woman</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a 
+                                    href="#"
+                                    class="d-flex flex-nowrap align-items-center justify-content-between"
+                                >
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img
+                                            src="./src/assets/images/placeholder-img.jpg"
+                                            loading="lazy"
+                                            class="avatar medium img-cover"
+                                        />
+    
+                                        <h6 class="text-second-color line-clamp line-clamp-1">Woman</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a 
+                                    href="#"
+                                    class="d-flex flex-nowrap align-items-center justify-content-between"
+                                >
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img
+                                            src="./src/assets/images/placeholder-img.jpg"
+                                            loading="lazy"
+                                            class="avatar medium img-cover"
+                                        />
+    
+                                        <h6 class="text-second-color line-clamp line-clamp-1">Woman</h6>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="border-bottom border-2 border-color pb-3 mb-3">
+                    <button 
+                        type="button" 
+                        class="d-flex flex-nowrap align-items-center justify-content-between w-100" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#categories-3"
+                    >
+                        <div class="d-flex align-items-center gap-3">
+                            <img
+                                src="./src/assets/images/placeholder-img.jpg"
+                                loading="lazy"
+                                class="avatar medium img-cover"
+                            />
+
+                            <h5 class="line-clamp line-clamp-1">For Kids</h5>
+                        </div>
+
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="18"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
+                    </button>
+
+
+                    <div class="collapse" id="categories-3">
+                        <ul class="d-flex flex-column gap-4 pt-4 px-4">
+                            <li>
+                                <a 
+                                    href="#"
+                                    class="d-flex flex-nowrap align-items-center justify-content-between"
+                                >
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img
+                                            src="./src/assets/images/placeholder-img.jpg"
+                                            loading="lazy"
+                                            class="avatar medium img-cover"
+                                        />
+    
+                                        <h6 class="text-second-color line-clamp line-clamp-1">Kids</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a 
+                                    href="#"
+                                    class="d-flex flex-nowrap align-items-center justify-content-between"
+                                >
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img
+                                            src="./src/assets/images/placeholder-img.jpg"
+                                            loading="lazy"
+                                            class="avatar medium img-cover"
+                                        />
+    
+                                        <h6 class="text-second-color line-clamp line-clamp-1">Kids</h6>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a 
+                                    href="#"
+                                    class="d-flex flex-nowrap align-items-center justify-content-between"
+                                >
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img
+                                            src="./src/assets/images/placeholder-img.jpg"
+                                            loading="lazy"
+                                            class="avatar medium img-cover"
+                                        />
+    
+                                        <h6 class="text-second-color line-clamp line-clamp-1">Kids</h6>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </aside>
 
         <main class="main">
             <article>

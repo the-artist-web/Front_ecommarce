@@ -1,6 +1,13 @@
 'use strict';
 
-const dir = localStorage.getItem("dir") || document.documentElement.dir;
+const dir = document.documentElement.dir;
+
+/**
+ * Add event on elements
+ */
+const addEventOnElements = ($elements, eventType, callback) => {
+    $elements.forEach($elem => $elem.addEventListener(eventType, () => callback($elem)));
+}
 
 /**
  * Email address
@@ -46,5 +53,6 @@ const emailAddress = ($field) => {
 };
 
 export {
-    emailAddress
+    emailAddress,
+    addEventOnElements
 }
