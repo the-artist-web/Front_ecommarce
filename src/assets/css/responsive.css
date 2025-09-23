@@ -17,6 +17,9 @@
 
     /* Tooltips */
     .tooltip { display: flex; }
+
+    /* Modal */
+    .modal.searchbar .modal-content { padding: 40px !important; }
 }
 
 /**

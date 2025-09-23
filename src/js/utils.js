@@ -5,9 +5,7 @@ const dir = document.documentElement.dir;
 /**
  * Add event on elements
  */
-const addEventOnElements = ($elements, eventType, callback) => {
-    $elements.forEach($elem => $elem.addEventListener(eventType, () => callback($elem)));
-}
+const addEventOnElements = ($elements, eventType, callback) => $elements.forEach($elem => $elem.addEventListener(eventType, () => callback($elem)));
 
 /**
  * Email address

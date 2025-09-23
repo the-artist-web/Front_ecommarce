@@ -2,6 +2,11 @@
 
 export const Tooltip = ($elems) => {
     $elems.forEach($elem => {
-        return new bootstrap.Tooltip($elem);
+        const tooltip = bootstrap.Tooltip.getOrCreateInstance($elem);
+
+        $elem.addEventListener("click", () => {
+            tooltip.show();
+            tooltip.hide();
+        });
     });
 };
