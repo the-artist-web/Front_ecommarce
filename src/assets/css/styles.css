@@ -162,7 +162,7 @@ body {
     font-weight: normal;
     display: flex;
     flex-direction: column;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     overflow-y: hidden;
     padding-block-end: 70px;
 }
