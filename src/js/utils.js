@@ -25,8 +25,8 @@ const emailAddress = ($field) => {
 
     if (value === "") {
         $validation.innerHTML = dir === "ltr" ? "Email cannot be left blank" : "لا يمكن ترك الايميل فارغ";
-        $field.classList.add("warning");
-        $validation.classList.add("show", "warning");
+        $field.classList.add("error");
+        $validation.classList.add("show", "error");
     } else if (value.startsWith("_") || value.startsWith("-")) {
         $validation.innerHTML = dir === "ltr" ? "The name cannot start with `_` or `-` " : "لا يمكن أن يبدأ الاسم بـ `_` أو `-`";
         $field.classList.add("warning");

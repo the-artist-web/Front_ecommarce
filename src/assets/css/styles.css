@@ -16,7 +16,7 @@
     /* Neutral */
     --bg-color: #ffffff;
     --text-color: #000000;
-    --second-color: #909090;
+    --second-color: #6a6a6a;
     --second-bg-color: #f4f3ee;
     --border-color: #e9e9e9;
 
@@ -162,8 +162,9 @@ body {
     font-weight: normal;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     overflow-y: hidden;
+    padding-block-end: 70px;
 }
 
 body.load { overflow-y: visible; }
@@ -311,7 +312,7 @@ h6,
 p,
 .p {
     font-size: var(--fs-p) !important;
-    font-weight: var(--fw-medium) !important;
+    font-weight: var(--fw-regular) !important;
     line-height: var(--lh-p) !important;
     padding: 0 !important;
     margin: 0 !important;

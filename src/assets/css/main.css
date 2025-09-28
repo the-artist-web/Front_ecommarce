@@ -129,15 +129,23 @@
     display: flex;
     align-items: center;
     height: 80px;
-}
-
-.header .header-bottom.active {
     position: fixed;
-    top: 0;
+    top: 80px;
     left: 0;
     right: 0;
     z-index: 30;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s;
+}
+
+.header .header-bottom.active {
+    top: -80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: scroll_header 0.4s linear alternate;
+}
+
+@keyframes scroll_header {
+    0% { top: -80px; }
+    100% { top: 0; }
 }
 
 .header .header-bottom .nav-item { transition: all 0.4s; }
@@ -160,7 +168,7 @@
 
 .header .header-bottom .drop-user {
     background-color: var(--bg-color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,7 +213,7 @@
     transition: all 0.4s;
 }
 
-.navbar-mobile.active { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+.navbar-mobile.active { box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
 
 .navbar-mobile .nav-item {
     display: flex;
@@ -230,6 +238,58 @@
 }
 
 /* Footer */
+.footer { 
+    border-top: 1.8px solid var(--border-color); 
+    color: var(--text-color) !important;
+}
+
+.footer .footer-top { padding-block: 80px; }
+
+.footer .footer-bottom {
+    border-top: 1.8px solid var(--border-color);
+    padding-block: 17px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer .icon-btn { border: 2px solid var(--text-color) !important; }
+
+.footer .footer-link {
+    opacity: .7;
+    font-size: var(--fs-p) !important;
+    font-weight: var(--fw-regular) !important;
+    line-height: var(--lh-p) !important;
+    transition: all 0.4s;
+}
+
+.footer .footer-link:hover {
+    opacity: 1;
+    color: var(--main-color) !important;
+}
+
+.footer .input-wrapper { position: relative; }
+
+.footer .input-wrapper .form-control {
+    border-radius: var(--rounded-full);
+    min-height: 50px !important;
+    max-height: 50px !important;
+    padding-inline: 16px !important;
+    padding-inline-end: 50px !important;
+}
+
+.footer .input-wrapper .icon-btn {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);;
+}
+
+html[dir="rlt"] .footer .input-wrapper .icon-btn {
+    left: 5px;
+    right: auto;
+}
 
 /* ------------------------------------------------------------ *\
  * MAIN – INSIDE

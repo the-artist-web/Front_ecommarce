@@ -1,10 +1,5 @@
 'use strict';
 
-/**
- * Import modules
- */
-import { emailAddress } from "../utils.js";
-
 const body = document.body;
 
 const StartCard = ($overlay, $elem) => {
@@ -19,13 +14,7 @@ const closeStartCode = ($overlay, $elem) => {
     body.classList.remove("overflow-hidden");
 };
 
-const validationStartCode = ($field) => {
-    const $inputEmail = $field.querySelector("[data-field='email']");
-    $inputEmail.addEventListener("input", () => emailAddress($inputEmail));
-};
-
 export {
     StartCard,
-    closeStartCode,
-    validationStartCode,
+    closeStartCode
 }

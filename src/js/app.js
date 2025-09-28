@@ -7,14 +7,16 @@ import { Tooltip } from "./components/Tooltip.js";
 import { DropSelect } from "./components/DropSelect.js";
 import { addEventOnElements } from "./utils.js";
 import { FixedScrolling } from "./components/FixedScrolling.js";
+import { showItemHover } from "./components/CardMain.js";
+import { Empty } from "./components/Empty.js";
+import { Copyright } from "./components/Copyright.js";
 import { 
-    showItemHover,
-    showLastItemsHover
-} from "./components/CardMain.js";
+    validationStartCode,
+    emailInFooter
+} from "./user.js";
 import { 
     StartCard,
     closeStartCode,
-    validationStartCode,
 } from "./components/StartCard.js";
 
 /**
@@ -33,8 +35,10 @@ const $startCard = document.querySelector("[data-start-card]");
 const $overlayStartCard = document.querySelector("[data-overlay-start-card]");
 const $closeStartCard = document.querySelector("[data-close-start-card]");
 const $startCardForm = document.querySelector("[data-start-card-form]");
+if ($startCardForm)
+    validationStartCode($startCardForm);
+
 setTimeout(() => StartCard($overlayStartCard, $startCard), 4000);
-validationStartCode($startCardForm);
 $closeStartCard.addEventListener("click", () => closeStartCode($overlayStartCard, $startCard));
 $overlayStartCard.addEventListener("click", () => closeStartCode($overlayStartCard, $startCard));
 
@@ -69,9 +73,8 @@ window.addEventListener("scroll", () => FixedScrolling($fixedScrolling));
 /**
  * Cards main
  */
-const $cardMain = document.querySelectorAll(".card-main");
+const $cardMain = document.querySelectorAll("[data-card-main]");
 showItemHover($cardMain);
-showLastItemsHover($cardMain);
 
 /**
  * Love product
@@ -89,6 +92,33 @@ addEventOnElements($loveProducts, "click", function ($elem) {
     }
 });
 
+/**
+ * Run remove row
+ */
+const $removeRows = document.querySelectorAll("[data-remove-rows]");
+addEventOnElements($removeRows, "click", function ($elem) {
+    const $row = $elem.closest("[data-rows]");
 
+    $row.remove();
 
-// ابقا عدل ال cards في ال searchbar
+    // Run empty
+    Empty();
+});
+
+/**
+ * Run empty
+ */
+Empty();
+
+/**
+ * Run email in footer
+ */
+const $emailFooter = document.querySelector("[data-email-footer]");
+if ($emailFooter) 
+    emailInFooter($emailFooter);
+
+/**
+ * Run copyright
+ */
+const $copyrights = document.querySelectorAll("[data-copyrights]");
+Copyright($copyrights);

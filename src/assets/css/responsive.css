@@ -6,6 +6,11 @@
  * FIT SIZE: 768PX
  */
 @media screen and (min-width: 768px) {
+    /**
+     * RESET
+     */
+    body { padding-block-end: 0; }
+
     /** 
      * REUSED STYLE 
      */
@@ -25,7 +30,30 @@
 /**
  * FIT SIZE: 992px
  */
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    /**
+     * COMPONENTS
+     */
+     
+    /* Cards */
+    .card-main .btn-card { bottom: -50px; }
+
+    .card-main .card-overflow .icon-btn { right: -50px; }
+
+    .card-main .card-overflow:hover .btn-card { bottom: 14px; }
+
+    .card-main .card-overflow:hover .icon-btn { right: 14px; }
+
+    /**
+     * MAIN – OUTSIDE
+     */
+
+    /* Footer */
+    .footer .footer-bottom {
+        flex-direction: row;
+        align-items: center;
+    }
+}
 
 /**
  * FIT SIZE: 1440px
