@@ -272,9 +272,11 @@ html[dir="rtl"] .form-box .absolute {
 }
 
 .btn.large {
-  padding-inline: 25px !important;
-  min-height: 52px !important;
-  max-height: 52px !important;
+  font-size: var(--fs-h6) !important;
+  font-weight: var(--fw-medium) !important;
+  padding-inline: 32px !important;
+  min-height: 57px !important;
+  max-height: 57px !important;
 }
 
 .btn svg {
@@ -282,6 +284,13 @@ html[dir="rtl"] .form-box .absolute {
   max-width: 18px !important;
   min-height: 18px !important;
   max-height: 18px !important;
+}
+
+.btn.large svg {
+  min-width: 24px !important;
+  max-width: 24px !important;
+  min-height: 24px !important;
+  max-height: 24px !important;
 }
 
 .btn.btn-main {
@@ -305,7 +314,7 @@ html[dir="rtl"] .form-box .absolute {
 
 .btn.btn-outline-main {
   border: 1.8px solid var(--text-color) !important;
-  background-color: var(--bg-color) !important;
+  background-color: transparent !important;
 }
 
 .btn.btn-outline-main:hover { 
@@ -330,7 +339,7 @@ html[dir="rtl"] .form-box .absolute {
 
 .btn.btn-main-outline {
   border: 1.8px solid var(--text-color) !important;
-  background-color: var(--bg-color) !important;
+  background-color: transparent !important;
   color: var(--bg-color) !important;
 }
 

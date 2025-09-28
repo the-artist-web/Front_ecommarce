@@ -25,6 +25,20 @@
 
     /* Modal */
     .modal.searchbar .modal-content { padding: 40px !important; }
+
+    /**
+     * MAIN – INSIDE
+     */
+
+    /* Hero Section */
+    .hero,
+    .hero .carousel-item { height: calc(100dvh - 130px); }
+
+    .hero .title {
+        font-size: var(--fs-h1) !important;
+        font-weight: var(--fw-bold) !important;
+        line-height: var(--lh-h1) !important;
+    }
 }
 
 /**
@@ -52,6 +66,17 @@
     .footer .footer-bottom {
         flex-direction: row;
         align-items: center;
+    }
+
+    /**
+     * MAIN – INSIDE
+     */
+
+    /* Hero Section */
+    .hero .title {
+        font-size: 80px !important;
+        font-weight: 500 !important;
+        line-height: 90px !important;
     }
 }
 

@@ -25,8 +25,8 @@
      */
 
     /* Font Size */
-    --fs-h1: 32px;
-    --fs-h2: 24px;
+    --fs-h1: 36px;
+    --fs-h2: 30px;
     --fs-h3: 20px;
     --fs-h4: 18px;
     --fs-h5: 16px;
@@ -35,8 +35,8 @@
     --fs-small: 12px;
 
     /* Font Weight */
-    --fw-bold: 700;
-    --fw-semi-bold: 600;
+    --fw-bold: 600;
+    --fw-semi-bold: 500;
     --fw-medium: 500;
     --fw-regular: 400;
 
