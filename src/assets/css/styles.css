@@ -25,7 +25,7 @@
      */
 
     /* Font Size */
-    --fs-h1: 36px;
+    --fs-h1: 40px;
     --fs-h2: 30px;
     --fs-h3: 20px;
     --fs-h4: 18px;
@@ -35,13 +35,13 @@
     --fs-small: 12px;
 
     /* Font Weight */
-    --fw-bold: 600;
+    --fw-bold: 500;
     --fw-semi-bold: 500;
     --fw-medium: 500;
     --fw-regular: 400;
 
     /* Line Height */
-    --lh-h1: 40px;
+    --lh-h1: 50px;
     --lh-h2: 36px;
     --lh-h3: 28px;
     --lh-h4: 26px;
@@ -61,6 +61,7 @@
     --rounded-12: 12px;
     --rounded-16: 16px;
     --rounded-24: 24px;
+    --rounded-40: 40px;
     --rounded-full: 9999px;
 }
 
@@ -210,6 +211,12 @@ body {
 
 .title-section { margin-block-end: 44px; }
 
+.title-section .title {
+    font-size: var(--fs-h2) !important;
+    font-weight: var(--fw-bold) !important;
+    line-height: var(--lh-h2) !important;
+}
+
 .custom-scrollbar-hidden::-webkit-scrollbar { display: none; }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -250,6 +257,21 @@ body {
 :has(> .state-layer):is(:focus, :focus-visible, :focus-within) > .state-layer { opacity: 0.14; }
 
 :has(> .state-layer):active > .state-layer { opacity: 0.18; }
+
+.btn-link {
+    font-size: var(--fs-h5) !important;
+    font-weight: 600 !important;
+    line-height: var(--lh-h5) !important;
+    border-bottom: 2px solid var(--text-color) !important;
+    transition: all 0.4s;
+}
+
+.btn-link:hover {
+    color: var(--main-color) !important;
+    border-bottom: 2px solid var(--main-color) !important;
+}
+
+html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 
 /* ------------------------------------------------------------ *\
  * UTILITIES - TYPOGRAPHY
