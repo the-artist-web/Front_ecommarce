@@ -156,6 +156,13 @@ html[dir="rtl"] .form-box .absolute {
   max-height: 32px;
 }
 
+.avatar.large {
+  min-width: 60px;
+  max-width: 60px;
+  min-height: 60px;
+  max-height: 60px;
+}
+
 /* Icon button */
 .icon-btn {
   background-color: var(--bg-color) !important;
@@ -261,6 +268,7 @@ html[dir="rtl"] .form-box .absolute {
   overflow: hidden;
   position: relative;
   z-index: 2;
+  max-width: max-content; 
   transition: all 0.4s;
 }
 
@@ -515,6 +523,8 @@ html[dir="rtl"] .form-box .absolute {
   transform: scale(1.1);
 }
 
+.card-main .btn { max-width: 100%; }
+
 .card-collections {
   border-radius: var(--rounded-40);
   overflow: hidden;
@@ -574,7 +584,148 @@ html[dir="rtl"] .card-collections .card-body .arrow {
   visibility: hidden;
 }
 
+.card-collection-two {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--rounded-24);
+  min-height: 546px;
+}
+
+.card-collection-two .img-card {
+  min-height: 546px;
+  transition: all 2s;
+}
+
+.card-collection-two:hover .img-card { transform: scale(1.1); }
+
+.card-collection-two .card-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-collection-two .title-card { 
+  max-width: 200px;
+  transition: all 0.4s; 
+}
+
+.card-collection-two .title-card:hover { color: var(--main-color) !important; }
+
+.card-insta {
+  background-size: cover;
+  background-position: center center;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-radius: var(--rounded-8);
+  min-height: 220px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-insta .hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+
+.card-insta:hover .hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-cutomer {
+  border: 1.8px solid var(--border-color);
+  border-radius: var(--rounded-8);
+  display: grid;
+  grid-template-rows: 273px 1fr;
+}
+
+.card-cutomer .overflow-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.card-cutomer .overflow-img .hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+
+.card-cutomer .overflow-img:hover .hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-cutomer .card-body { padding: 26px; }
+
 /* Carousel */
+.carousel-indicators {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px !important;
+}
+
+.carousel-indicators .slide-to {
+  border: 1.8px solid transparent !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  border-radius: var(--rounded-full);
+  min-width: 16px;
+  max-width: 16px;
+  min-height: 16px;
+  max-height: 16px;
+  position: relative;
+}
+
+.carousel-indicators .slide-to.active { border-color: var(--text-color) !important; }
+
+.carousel-indicators .slide-to:before {
+  content: "";
+  border: 1.8px solid var(--text-color);
+  border-radius: var(--rounded-full);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 8px;
+  max-width: 8px;
+  min-height: 8px;
+  max-height: 8px;
+}
+
+.carousel-indicators .slide-to.active:before { background-color: var(--text-color); }
 
 /* Close button */
 
@@ -593,7 +744,7 @@ html[dir="rtl"] .card-collections .card-body .arrow {
   justify-content: center;
   gap: 10px;
   text-align: center;
-  font-size: var(--fs-h2) !important;
+  font-size: var(--fs-h3) !important;
   font-weight: var(--fw-medium) !important;
   color: var(--second-color) !important;
   position: absolute;
@@ -604,8 +755,8 @@ html[dir="rtl"] .card-collections .card-body .arrow {
 
 .empty svg {
   opacity: 0.3;
-  width: 68px;
-  height: 68px;
+  width: 60px;
+  height: 60px;
 }
 
 /* Dropdowns */
@@ -714,6 +865,8 @@ html[dir="rtl"] .card-collections .card-body .arrow {
   width: 100%;
   max-width: 480px;
 }
+
+.offcanvas.shopping-cart .btn { max-width: 100%; }
 
 /* Pagination */
 

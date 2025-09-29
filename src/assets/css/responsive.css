@@ -67,6 +67,11 @@
 
     .card-main .card-overflow:hover .icon-btn { right: 14px; }
 
+    .card-cutomer {
+        grid-template-columns: 234px 1fr;
+        grid-template-rows: 1fr;
+    }
+
     /**
      * MAIN – OUTSIDE
      */
@@ -87,6 +92,34 @@
         font-weight: 500 !important;
         line-height: 90px !important;
     }
+
+    /* Offer Section */
+    .offer-section .container {
+        grid-template-columns: 450px 600px;
+        grid-template-rows: max-content;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .offer-section .container img { height: 450px; }
+
+    .offer-section .body {
+        padding: 40px 60px 36px; 
+        position: absolute;
+        bottom: 80px;
+        left: 45%;
+        z-index: 10;
+        transform: translateX(-50%);
+        max-width: 420px;
+    }
+
+    .offer-section .body .title {
+        font-size: var(--fs-h1) !important;
+        font-weight: var(--fw-bold) !important;
+        line-height: var(--lh-h1) !important;
+    }
+
+    .offer-section .img-two { margin-block-start: 80px; }
 }
 
 /**

@@ -189,13 +189,11 @@ body {
  * REUSED STYLE
 \* ------------------------------------------------------------ */
 
-.section { padding-block: 80px; }
+.section { padding-block-end: 80px; }
 
 .container {
     padding-inline: 16px !important;
-    max-width: 1320px !important;
     margin-inline: auto;
-    width: 100%;
 }
 
 .img-cover {
@@ -263,6 +261,8 @@ body {
     font-weight: 600 !important;
     line-height: var(--lh-h5) !important;
     border-bottom: 2px solid var(--text-color) !important;
+    max-width: max-content;
+    text-decoration: none;
     transition: all 0.4s;
 }
 

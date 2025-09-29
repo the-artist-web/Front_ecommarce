@@ -101,6 +101,8 @@
     max-width: 320px;
 }
 
+.start-card .btn { max-width: 100%; }
+
 /* Header */
 .header {
     display: grid;
@@ -182,6 +184,8 @@
     visibility: hidden;
     transition: all 0.4s;
 }
+
+.header .header-bottom .drop-user .btn { max-width: 100%; }
 
 .header .header-bottom li:hover .drop-user {
     transform: translateY(16px) translateX(-50%);
@@ -295,6 +299,8 @@ html[dir="rlt"] .footer .input-wrapper .icon-btn {
 \* ------------------------------------------------------------ */
 
 /* Hero Section */
+.hero { margin-block-end: 80px; }
+
 .hero,
 .hero .container {
     display: flex;
@@ -311,45 +317,6 @@ html[dir="rlt"] .footer .input-wrapper .icon-btn {
     background-clip: border-box;
 }
 
-.hero .carousel-indicators {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 16px !important;
-}
-
-.hero .carousel-indicators .slide-to {
-    border: 1.8px solid transparent !important;
-    background-color: transparent !important;
-    opacity: 1 !important;
-    margin: 0 !important;
-    border-radius: var(--rounded-full);
-    min-width: 16px;
-    max-width: 16px;
-    min-height: 16px;
-    max-height: 16px;
-    position: relative;
-}
-
-.hero .carousel-indicators .slide-to.active { border-color: var(--text-color) !important; }
-
-.hero .carousel-indicators .slide-to:before {
-    content: "";
-    border: 1.8px solid var(--text-color);
-    border-radius: var(--rounded-full);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 8px;
-    max-width: 8px;
-    min-height: 8px;
-    max-height: 8px;
-}
-
-.hero .carousel-indicators .slide-to.active:before { background-color: var(--text-color); }
-
 .hero .title {
     font-size: var(--fs-h2) !important;
     font-weight: var(--fw-bold) !important;
@@ -363,8 +330,37 @@ html[dir="rlt"] .footer .input-wrapper .icon-btn {
     opacity: 0.7;
 }
 
-/* About Section */
+/* Offer Section */
+.offer-section .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr max-content 1fr;
+    gap: 16px;
+    position: relative;
+}
 
-/* Services Section */
+.offer-section .body {
+    background-color: var(--bg-color);
+    padding: 40px 16px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.offer-section .body .title {
+    font-size: var(--fs-h2) !important;
+    font-weight: var(--fw-bold) !important;
+    line-height: var(--lh-h2) !important;
+}
+
+/* Cusyomer Say */
+.customer-say .carousel-indicators {
+    position: relative;
+    margin-block: 16px 0 !important;
+}
 
 /* Contact Section */
