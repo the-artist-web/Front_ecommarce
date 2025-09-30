@@ -24,7 +24,7 @@
     .tooltip { display: flex; }
 
     /* Modal */
-    .modal.searchbar .modal-content { padding: 40px !important; }
+    .modal.searchbar .modal-content { padding: 30px !important; }
 
     /**
      * MAIN – INSIDE
