@@ -143,6 +143,22 @@ html[dir="rtl"] .form-box .absolute {
   max-height: 40px;
 }
 
+/* Banner */
+.banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 80px 0;
+  margin-block-end: 80px;
+}
+
+.banner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Avatars */
 .avatar {
   border-radius: var(--rounded-full);
@@ -250,6 +266,31 @@ html[dir="rtl"] .form-box .absolute {
 }
 
 /* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-p) !important;
+  font-weight: var(--fw-medium) !important;
+  line-height: var(--lh-p) !important;
+}
+
+.breadcrumb a { 
+  color: var(--text-color) !important;
+  transition: color 0.7s; 
+}
+
+.breadcrumb a:hover { color: var(--main-color) !important; }
+
+.breadcrumb .breadcrumb-item { color: var(--second-color) !important; }
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: 8px;
+    color: var(--second-color);
+    content: var(--bs-breadcrumb-divider, "/");
+}
 
 /* Buttons */
 .btn {
@@ -869,6 +910,49 @@ html[dir="rtl"] .card-collections .card-body .arrow {
 .offcanvas.shopping-cart .btn { max-width: 100%; }
 
 /* Pagination */
+.pagination {
+  margin-block-start: 30px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pagination svg {
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+.pagination .page-item .page-link {
+  border: 2px solid var(--border-color) !important;
+  box-shadow: 0 0 0 transparent !important;
+  background-color: var(--bg-color) !important;
+  border-radius: var(--rounded-8) !important;
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-p) !important;
+  font-weight: var(--fw-medium) !important;
+  line-height: var(--lh-p) !important;
+  color: var(--text-color) !important;
+  transition: color 0.4s, background-color 0.4s;
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: var(--text-color) !important;
+  color: var(--bg-color) !important;
+}
+
+.pagination .page-item .page-link.active {
+  background-color: var(--text-color) !important;
+  color: var(--bg-color) !important;
+}
 
 /* Placeholders */
 
