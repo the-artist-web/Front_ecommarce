@@ -363,4 +363,9 @@ html[dir="rlt"] .footer .input-wrapper .icon-btn {
     margin-block: 16px 0 !important;
 }
 
-/* Contact Section */
+/* Shop Wrapper */
+.shop-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}

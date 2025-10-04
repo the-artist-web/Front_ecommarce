@@ -122,3 +122,30 @@ if ($emailFooter)
  */
 const $copyrights = document.querySelectorAll("[data-copyrights]");
 Copyright($copyrights);
+
+/**
+ * Grid Shop
+ */
+const $btnLengthColumns = document.querySelectorAll("[data-length-columns]");
+const $gridShop = document.querySelector("[data-grid-shop]");
+
+if ($btnLengthColumns) addEventOnElements($btnLengthColumns, "click", function ($elem) {
+    $btnLengthColumns.forEach($elem => $elem.classList.remove("active"))
+
+    $elem.classList.add("active");
+
+    $gridShop.classList.remove("row-cols-lg-2", "row-cols-lg-3", "row-cols-lg-4");
+
+    if ($elem.dataset.lengthColumns === "2") 
+    {
+        $gridShop.classList.add("row-cols-lg-2");
+    } 
+        else if ($elem.dataset.lengthColumns === "3") 
+    {
+        $gridShop.classList.add("row-cols-lg-3");
+    } 
+        else if ($elem.dataset.lengthColumns === "4") 
+    {
+        $gridShop.classList.add("row-cols-lg-4");
+    }
+});

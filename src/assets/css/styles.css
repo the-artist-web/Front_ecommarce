@@ -273,6 +273,12 @@ body {
 
 html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 
+.icon-active.active svg { fill: var(--text-color); }
+
+.hover { transition: color 0.4s; }
+
+.hover:hover { color: var(--main-color) !important; }
+
 /* ------------------------------------------------------------ *\
  * UTILITIES - TYPOGRAPHY
 \* ------------------------------------------------------------ */

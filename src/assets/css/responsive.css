@@ -120,6 +120,9 @@
     }
 
     .offer-section .img-two { margin-block-start: 80px; }
+
+    /* Shop Wrapper */
+    .shop-wrapper { grid-template-columns: 317px 1fr; }
 }
 
 /**
