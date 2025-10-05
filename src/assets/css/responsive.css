@@ -123,6 +123,16 @@
 
     /* Shop Wrapper */
     .shop-wrapper { grid-template-columns: 317px 1fr; }
+
+    /* Offcanvas */
+    .filter {
+        position: static;
+        width: 100%;
+        height: max-content;
+        transform: translateX(0%) !important;
+        padding: 0;
+        z-index: 0;
+    }
 }
 
 /**

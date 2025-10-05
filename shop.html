@@ -51,8 +51,11 @@
 
     <body 
         id="up"
-        lang="en"
+        lang="en" 
     >
+        <!-- OVERLAY -->
+        <div class="overlay" data-overlay></div>
+
         <!-- START LOAD -->
         <div 
             class="start-load" 
@@ -583,7 +586,7 @@
         </nav>
 
         <!-- MENU -->
-        <aside 
+        <aside
             class="offcanvas offcanvas-start menu" 
             id="menu"
         >
@@ -1974,6 +1977,12 @@
                 <section class="section">
                     <div class="container">
                         <div class="d-flex align-items-center justify-content-between gap-4 mb-5">
+                            <button type="button" class="btn btn-outline d-lg-none" data-sheets-toggler="#filter">
+                                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-adjustments-horizontal"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 6l8 0" /><path d="M16 6l4 0" /><path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 12l2 0" /><path d="M10 12l10 0" /><path d="M17 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M4 18l11 0" /><path d="M19 18l1 0" /></svg>
+
+                                Filter
+                            </button>
+
                             <div class="d-none d-lg-flex align-items-center gap-3">
                                 <button
                                     class="icon-active"
@@ -2036,22 +2045,435 @@
                         </div>
 
                         <div class="shop-wrapper">
-                            <form action="" method="POST" class="col">
-                                <div class="d-flex flex-column gap-4">
-                                    <h3>Product Categories</h3>
+                            <form action="" method="POST" class="filter custom-scrollbar" id="filter">
+                                <div class="d-flex flex-column">
+                                    <h3 class="title">Product Categories</h3>
 
                                     <div class="d-flex flex-column gap-3">
-                                        <label for="categories_1" class="hover">
-                                            <p class="text-color">Bags (112)</p>
+                                        <label
+                                            for="category_1"
+                                            class="hover h6 active"
+                                        >
+                                            Bags (112)
 
+                                            <input
+                                                type="radio"
+                                                id="category_1"
+                                                name="category"
+                                                value=""
+                                                hidden
+                                            />  
+                                        </label>    
+                                        
+                                        <label
+                                            for="category_2"
+                                            class="hover h6"
+                                        >
+                                            Booking (32)
+
+                                            <input
+                                                type="radio"
+                                                id="category_2"
+                                                name="category"
+                                                value=""
+                                                hidden
+                                            />  
                                         </label>
                                         
-                                        <input
-                                            type="radio"
-                                            name="product_categories"
-                                            id="categories_1"
-                                            class="d-none"
-                                        />
+                                        <label
+                                            for="category_2"
+                                            class="hover h6"
+                                        >
+                                            Clothing (42)
+
+                                            <input
+                                                type="radio"
+                                                id="category_2"
+                                                name="category"
+                                                value=""
+                                                hidden
+                                            />  
+                                        </label>
+                                        
+                                        <label
+                                            for="category_2"
+                                            class="hover h6"
+                                        >
+                                            Women (65)
+
+                                            <input
+                                                type="radio"
+                                                id="category_2"
+                                                name="category"
+                                                value=""
+                                                hidden
+                                            />  
+                                        </label>
+                                        
+                                        <label
+                                            for="category_2"
+                                            class="hover h6"
+                                        >
+                                            Men (13)
+
+                                            <input
+                                                type="radio"
+                                                id="category_2"
+                                                name="category"
+                                                value=""
+                                                hidden
+                                            />  
+                                        </label>
+                                        
+                                        <label
+                                            for="category_2"
+                                            class="hover h6"
+                                        >
+                                            Shoes (52)
+
+                                            <input
+                                                type="radio"
+                                                id="category_2"
+                                                name="category"
+                                                value=""
+                                                hidden
+                                            />  
+                                        </label>
+                                        
+                                        <label
+                                            for="category_2"
+                                            class="hover h6"
+                                        >
+                                            Uncategorized (14)
+
+                                            <input
+                                                type="radio"
+                                                id="category_2"
+                                                name="category"
+                                                value=""
+                                                hidden
+                                            />  
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div style="border: 1px solid var(--border-color) !important; width: 100%; max-height: max-content;"></div>
+
+                                <div class="d-flex flex-column">
+                                    <h3 class="title">Price</h3>
+
+                                    <div class="d-flex flex-nowrap align-items-center gap-4">
+                                        <div class="form-box">
+                                            <label for="min_price" class="form-label">Min price</label>
+
+                                            <input
+                                                type="number"
+                                                placeholder="$Min price"
+                                                id="min_price"
+                                                name=""
+                                                value="0"
+                                                class="form-control"
+                                            />
+                                        </div>
+
+                                        <div class="form-box">
+                                            <label for="max_price" class="form-label">Max price</label>
+
+                                            <input
+                                                type="number"
+                                                placeholder="$Max price"
+                                                id="max_price"
+                                                name=""
+                                                value="500"
+                                                class="form-control"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="border: 1px solid var(--border-color) !important; width: 100%; max-height: max-content;"></div>
+
+                                <div class="d-flex flex-column">
+                                    <h3 class="title">Size</h3>
+
+                                    <div class="d-flex flex-wrap align-items-center gap-3">
+                                        <label for="xs" class="icon-btn black-border extra-large active">
+                                            XS
+
+                                            <input
+                                                type="radio"
+                                                id="xs"
+                                                name="size"
+                                                value=""
+                                                hidden
+                                            />
+                                        </label>
+
+                                        <label for="s" class="icon-btn black-border extra-large">
+                                            s
+
+                                            <input
+                                                type="radio"
+                                                id="s"
+                                                name="size"
+                                                value=""
+                                                hidden
+                                            />
+                                        </label>
+
+                                        <label for="m" class="icon-btn black-border extra-large">
+                                            m
+
+                                            <input
+                                                type="radio"
+                                                id="m"
+                                                name="size"
+                                                value=""
+                                                hidden
+                                            />
+                                        </label>
+
+                                        <label for="l" class="icon-btn black-border extra-large">
+                                            l
+
+                                            <input
+                                                type="radio"
+                                                id="l"
+                                                name="size"
+                                                value=""
+                                                hidden
+                                            />
+                                        </label>
+
+                                        <label for="xl" class="icon-btn black-border extra-large">
+                                            xl
+
+                                            <input
+                                                type="radio"
+                                                id="xl"
+                                                name="size"
+                                                value=""
+                                                hidden
+                                            />
+                                        </label>
+
+                                        <label for="2xl" class="icon-btn black-border extra-large">
+                                            2xl
+
+                                            <input
+                                                type="radio"
+                                                id="2xl"
+                                                name="size"
+                                                value=""
+                                                hidden
+                                            />
+                                        </label>
+
+                                        <label for="3xl" class="icon-btn black-border extra-large">
+                                            3xl
+
+                                            <input
+                                                type="radio"
+                                                id="3xl"
+                                                name="size"
+                                                value=""
+                                                hidden
+                                            />
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div style="border: 1px solid var(--border-color) !important; width: 100%; max-height: max-content;"></div>
+
+                                <div class="d-flex flex-column">
+                                    <h3 class="title">Colors</h3>
+
+                                    <div class="d-flex flex-wrap align-items-center gap-3">
+                                        <label for="pink" class="btn btn-outline rounded-pill active">
+                                            <div
+                                                class="product-color"
+                                                style="--bg-product-color: Pink;"
+                                            ></div>
+
+                                            Pink
+
+                                            <input
+                                                type="radio"
+                                                name=""
+                                                value=""
+                                                id="pink"
+                                                hidden
+                                            />
+                                        </label>
+
+                                        <label for="red" class="btn btn-outline rounded-pill">
+                                            <div
+                                                class="product-color"
+                                                style="--bg-product-color: red;"
+                                            ></div>
+
+                                            red
+
+                                            <input
+                                                type="radio"
+                                                name=""
+                                                value=""
+                                                id="red"
+                                                hidden
+                                            />
+                                        </label>
+
+                                        <label for="beige" class="btn btn-outline rounded-pill">
+                                            <div
+                                                class="product-color"
+                                                style="--bg-product-color: beige;"
+                                            ></div>
+
+                                            beige
+
+                                            <input
+                                                type="radio"
+                                                name=""
+                                                value=""
+                                                id="beige"
+                                                hidden
+                                            />
+                                        </label>
+
+                                        <label for="orange" class="btn btn-outline rounded-pill">
+                                            <div
+                                                class="product-color"
+                                                style="--bg-product-color: orange;"
+                                            ></div>
+
+                                            orange
+
+                                            <input
+                                                type="radio"
+                                                name=""
+                                                value=""
+                                                id="orange"
+                                                hidden
+                                            />
+                                        </label>
+
+                                        <label for="green" class="btn btn-outline rounded-pill">
+                                            <div
+                                                class="product-color"
+                                                style="--bg-product-color: green;"
+                                            ></div>
+
+                                            green
+
+                                            <input
+                                                type="radio"
+                                                name=""
+                                                value=""
+                                                id="green"
+                                                hidden
+                                            />
+                                        </label>
+
+                                        <label for="grey" class="btn btn-outline rounded-pill">
+                                            <div
+                                                class="product-color"
+                                                style="--bg-product-color: grey;"
+                                            ></div>
+
+                                            grey
+
+                                            <input
+                                                type="radio"
+                                                name=""
+                                                value=""
+                                                id="grey"
+                                                hidden
+                                            />
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div style="border: 1px solid var(--border-color) !important; width: 100%; max-height: max-content;"></div>
+
+                                <div class="d-flex flex-column">
+                                    <h3 class="title">Availability</h3>
+
+                                    <div class="d-flex flex-column gap-3">
+                                        <div class="form-checkbox">
+                                            <input 
+                                                type="checkbox" 
+                                                id="in_stock"
+                                                value="" 
+                                                name=""
+                                                class="form-check-input" 
+                                            />
+
+                                            <label 
+                                                for="in_stock"
+                                                class="form-check-label h6" 
+                                            >
+                                                In stock (32)
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="form-checkbox">
+                                            <input 
+                                                type="checkbox" 
+                                                id="out_of_stock"
+                                                value="" 
+                                                name=""
+                                                class="form-check-input" 
+                                            />
+
+                                            <label 
+                                                for="out_of_stock"
+                                                class="form-check-label h6" 
+                                            >
+                                                Out of stock (2)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="border: 1px solid var(--border-color) !important; width: 100%; max-height: max-content;"></div>
+
+                                <div class="d-flex flex-column">
+                                    <h3 class="title">Brands</h3>
+
+                                    <div class="d-flex flex-column gap-3">
+                                        <div class="form-checkbox">
+                                            <input 
+                                                type="checkbox" 
+                                                id="nike"
+                                                value="" 
+                                                name=""
+                                                class="form-check-input" 
+                                            />
+
+                                            <label 
+                                                for="nike"
+                                                class="form-check-label h6" 
+                                            >
+                                                Nike (112)
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="form-checkbox">
+                                            <input 
+                                                type="checkbox" 
+                                                id="louise_vuitton"
+                                                value="" 
+                                                name=""
+                                                class="form-check-input" 
+                                            />
+
+                                            <label 
+                                                for="louise_vuitton"
+                                                class="form-check-label h6" 
+                                            >
+                                                Louis Vuitton (2)
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -2741,25 +3163,25 @@
                                     </div>
                                 </div>
 
-                                <ul class="pagination">
+                                <ul class="pagination" data-aos="fade-up">
                                     <li class="page-item">
                                         <a class="page-link" href="#">
                                             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
                                         </a>
                                     </li>
-        
+
                                     <li class="page-item">
                                         <a class="page-link active" href="#">1</a>
                                     </li>
-        
+
                                     <li class="page-item">
                                         <a class="page-link" href="#">2</a>
                                     </li>
-        
+
                                     <li class="page-item">
                                         <a class="page-link" href="#">3</a>
                                     </li>
-        
+
                                     <li class="page-item">
                                         <a class="page-link" href="#">
                                             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>

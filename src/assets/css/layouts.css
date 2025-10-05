@@ -17,6 +17,11 @@
 }
 
 /* Label */
+.form-box .form-label {
+  font-size: var(--fs-h6) !important;
+  font-weight: var(--fw-medium) !important;
+  line-height: var(--lh-h6) !important;
+}
 
 /* Input */
 .form-box .form-control {
@@ -196,11 +201,15 @@ html[dir="rtl"] .form-box .form-select { padding-inline: 36px 12px !important; }
 .icon-btn {
   background-color: var(--bg-color) !important;
   color: var(--text-color) !important;
+  text-transform: uppercase;
   border-radius: var(--rounded-full);
   display: flex;
   align-items: center;
   justify-content: center;
   --state-layer-bg: var(--text-color);
+  font-size: var(--fs-p) !important;
+  font-weight: var(--fw-regular) !important;
+  line-height: var(--lh-p) !important;
   transition: all 0.4s;
 }
 
@@ -229,6 +238,18 @@ html[dir="rtl"] .form-box .form-select { padding-inline: 36px 12px !important; }
 .icon-btn.black-border:hover {
   background-color: var(--text-color) !important; 
   color: var(--bg-color) !important;
+}
+
+.icon-btn.black-border.active {
+  background-color: var(--text-color) !important; 
+  color: var(--bg-color) !important;
+}
+
+.icon-btn.extra-large {
+  min-width: 45px;
+  max-width: 45px;
+  min-height: 45px;
+  max-height: 45px;
 }
 
 .icon-btn.large {
@@ -355,6 +376,12 @@ html[dir="rtl"] .form-box .form-select { padding-inline: 36px 12px !important; }
   max-height: 24px !important;
 }
 
+.btn.btn-outline { border: 2px solid var(--border-color) !important; }
+
+.btn.btn-outline:hover { border: 2px solid var(--text-color) !important; }
+
+.btn.btn-outline.active { border: 2px solid var(--text-color) !important; }
+
 .btn.btn-main {
   background-color: var(--text-color);
   color: var(--bg-color) !important;
@@ -471,17 +498,11 @@ html[dir="rtl"] .form-box .form-select { padding-inline: 36px 12px !important; }
 .card-main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px max-content;
+  grid-template-rows: 1fr max-content;
   gap: 16px;
   position: relative !important;
   transition: none !important;
 }
-
-.card-main.large { grid-template-rows: 376px max-content; }
-
-.card-main.large .carousel-item { height: 376px; }
-
-.card-main.large .carousel-item .img-card { height: 376px; }
 
 .card-main .badge {
   position: absolute;
@@ -495,14 +516,12 @@ html[dir="rtl"] .form-box .form-select { padding-inline: 36px 12px !important; }
   border-radius: var(--rounded-8);
   overflow: hidden;
   width: 100%;
-  height: 300px;
   display: block;
   transition: all 0.8s !important;
 }
 
 .card-main .carousel-item .img-card {
   width: 100%;
-  height: 300px;
   transition: all 0.4s;
 }
 
@@ -526,7 +545,7 @@ html[dir="rtl"] .form-box .form-select { padding-inline: 36px 12px !important; }
   height: 22px !important;
 }
 
-.card-main .card-body .carousel-indicators .product-color {
+.product-color {
   border: 1.8px solid transparent !important;
   background-color: var(--bg-product-color) !important;
   border-radius: var(--rounded-full) !important;
@@ -539,7 +558,7 @@ html[dir="rtl"] .form-box .form-select { padding-inline: 36px 12px !important; }
   transition: all 0.4s;
 }
 
-.card-main .card-body .carousel-indicators .product-color.active { border-color: var(--text-color) !important; }
+.product-color.active { border-color: var(--text-color) !important; }
 
 .card-main .card-overflow {
   border-radius: var(--rounded-10) !important;
@@ -927,6 +946,37 @@ html[dir="rtl"] .card-collections .card-body .arrow {
 }
 
 .offcanvas.shopping-cart .btn { max-width: 100%; }
+
+.filter {
+  background-color: var(--bg-color) !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 110000;
+  width: 300px;
+  height: 100dvh;
+  transform: translateX(-100%);
+  display: grid;
+  gap: 20px;
+  padding: 24px;
+  overflow-y: auto;
+  transition: transform 400ms ease-out;
+}
+
+html[dir="rtl"] .filter { 
+  transform: translateX(100%); 
+  left: auto;
+  right: 0;
+}
+
+.filter.active { transform: translateX(0%) !important; }
+
+.filter .title {
+  font-size: 20px !important;
+  margin-block-end: 16px !important;
+  font-weight: 500 !important;
+}
 
 /* Pagination */
 .pagination {

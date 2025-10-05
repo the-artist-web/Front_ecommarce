@@ -111,6 +111,7 @@ a {
 img { height: auto; }
 
 label {
+    cursor: pointer !important;
     margin: 0 !important; 
     padding: 0 !important;
 }
@@ -278,6 +279,26 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
 .hover { transition: color 0.4s; }
 
 .hover:hover { color: var(--main-color) !important; }
+
+.hover.active { color: var(--main-color) !important; }
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
 
 /* ------------------------------------------------------------ *\
  * UTILITIES - TYPOGRAPHY

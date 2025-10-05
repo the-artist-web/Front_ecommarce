@@ -149,3 +149,22 @@ if ($btnLengthColumns) addEventOnElements($btnLengthColumns, "click", function (
         $gridShop.classList.add("row-cols-lg-4");
     }
 });
+
+/**
+ * Run Sheets
+ */
+const $sheetsToggler = document.querySelectorAll("[data-sheets-toggler]");
+const $overlay = document.querySelector("[data-overlay]");
+
+if ($sheetsToggler) addEventOnElements($sheetsToggler, "click", function ($elem) {
+    const $sheet = document.querySelector(`${$elem.dataset.sheetsToggler}`);
+
+    $overlay.classList.toggle("active");
+    $sheet.classList.toggle("active");
+});
+
+$overlay.addEventListener("click", () => {
+    $overlay.classList.toggle("active");
+
+    $sheetsToggler.forEach($elem => document.querySelector(`${$elem.dataset.sheetsToggler}`).classList.toggle("active"));
+})
