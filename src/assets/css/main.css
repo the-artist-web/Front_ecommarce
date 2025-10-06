@@ -467,3 +467,32 @@ html[dir="rlt"] .footer .input-wrapper .icon-btn {
 }
 
 .details-section .details-card .details-body .text-off { text-decoration: line-through; }
+
+.details-section .nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-block-end: 28px !important;
+    padding-inline: 16px !important;
+    margin-inline: -16px !important;
+}
+
+.details-section .nav .nav-item .nav-link {
+    font-size: var(--fs-h3) !important;
+    font-weight: var(--fw-semi-bold) !important;
+    line-height: var(--lh-h3) !important;
+    text-wrap: nowrap;
+    border-bottom: 2px solid transparent !important;
+    padding-inline: 0 !important;
+    transition: border-bottom 0.4s;
+}
+
+.details-section .nav .nav-item .nav-link.active { border-bottom-color: var(--text-color) !important; }
+
+.details-section .tab-content .tab-pane {
+    padding: 20px;
+    border: 2px solid var(--border-color) !important;
+    border-radius: var(--rounded-12);
+}

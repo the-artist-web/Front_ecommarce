@@ -148,6 +148,10 @@
     }
 
     .details-section .details-card .img-grid.active { top: 96px; }
+
+    .details-section .nav { justify-content: center; }
+
+    .details-section .tab-content .tab-pane { padding: 30px; }
 }
 
 /**

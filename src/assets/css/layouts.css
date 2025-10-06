@@ -182,8 +182,12 @@ html[dir="rtl"] .form-box .form-select { padding-inline: 36px 12px !important; }
 
 /* Avatars */
 .avatar {
+  border: 2px solid var(--border-color) !important;
   border-radius: var(--rounded-full);
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .avatar.medium {
@@ -198,6 +202,13 @@ html[dir="rtl"] .form-box .form-select { padding-inline: 36px 12px !important; }
   max-width: 60px;
   min-height: 60px;
   max-height: 60px;
+}
+
+.avatar.large svg {
+  min-width: 30px;
+  max-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
 }
 
 /* Icon button */
