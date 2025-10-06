@@ -133,6 +133,21 @@
         padding: 0;
         z-index: 0;
     }
+
+    /* Details Section */
+    .details-section .details-card {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .details-section .details-card .img-grid {
+        position: sticky;
+        top: 16px;
+        height: max-content;
+        transition: top 0.4s;
+    }
+
+    .details-section .details-card .img-grid.active { top: 96px; }
 }
 
 /**

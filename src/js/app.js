@@ -10,6 +10,7 @@ import { FixedScrolling } from "./components/FixedScrolling.js";
 import { showItemHover } from "./components/CardMain.js";
 import { Empty } from "./components/Empty.js";
 import { Copyright } from "./components/Copyright.js";
+import { BtnQuantity } from "./components/BtnQuantity.js";
 import { 
     validationStartCode,
     emailInFooter
@@ -18,6 +19,7 @@ import {
     StartCard,
     closeStartCode,
 } from "./components/StartCard.js";
+import { CopyURL } from "./components/CopyUrl.js";
 
 /**
  * Start load
@@ -168,3 +170,19 @@ $overlay.addEventListener("click", () => {
 
     $sheetsToggler.forEach($elem => document.querySelector(`${$elem.dataset.sheetsToggler}`).classList.toggle("active"));
 })
+
+/**
+ * Btn quantity
+ */
+const $btnQuantities = document.querySelectorAll("[data-btn-quantities]");
+if ($btnQuantities) BtnQuantity($btnQuantities);
+
+/**
+ * Run copy url
+ */
+const $copyURLs = document.querySelectorAll("[data-copy-urls]");
+if ($copyURLs) CopyURL($copyURLs);
+
+/**
+ * Product Details
+ */

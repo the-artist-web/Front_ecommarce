@@ -369,3 +369,101 @@ html[dir="rlt"] .footer .input-wrapper .icon-btn {
     grid-template-columns: 1fr;
     gap: 30px;
 }
+
+/* Details Section */
+.details-section svg {
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+}
+
+.details-section .product-color { 
+    min-width: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+.details-section .btn {
+    border-radius: var(--rounded-full) !important;
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+.details-section .details-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr max-content;
+    column-gap: 50px;
+    row-gap: 30px;
+}
+
+.details-section .details-card .img-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 106px;
+    gap: 20px;
+}
+
+.details-section .details-card .img-grid img { border-radius: var(--rounded-12); }
+
+.details-section .details-card .img-grid .image-list {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.details-section .details-card .img-grid .image-list .img-item { 
+    border: 2px solid transparent !important;
+    cursor: pointer;
+    border-radius: var(--rounded-8); 
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 106px;
+    max-height: 106px;
+    transition: border 0.4s;
+}
+
+.details-section .details-card .img-grid .image-list .img-item:hover { border-color: var(--text-color) !important; }
+
+.details-section .details-card .img-grid .image-list .img-item.active { border-color: var(--text-color) !important; }
+
+.details-section .details-card .details-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details-section .details-card .details-body .column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.details-section .details-card .details-body .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.details-section .details-card .details-body .wrapper-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.details-section .details-card .details-body .text-category { text-transform: uppercase; }
+
+.details-section .details-card .details-body .wrapper-star {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1px;
+}
+
+.details-section .details-card .details-body .text-off { text-decoration: line-through; }

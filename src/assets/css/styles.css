@@ -258,6 +258,9 @@ body {
 :has(> .state-layer):active > .state-layer { opacity: 0.18; }
 
 .btn-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-size: var(--fs-h5) !important;
     font-weight: 600 !important;
     line-height: var(--lh-h5) !important;
@@ -299,6 +302,23 @@ html[dir="rtl"] .arrow-dir { transform: rotateY(180deg); }
     opacity: 1;
     visibility: visible;
 }
+
+.product-color {
+  border: 1.8px solid transparent !important;
+  background-color: var(--bg-product-color) !important;
+  color: var(--bg-product-color) !important;
+  overflow: hidden;
+  border-radius: var(--rounded-full) !important;
+  min-width: 18px;
+  max-width: 18px;
+  min-height: 18px;
+  max-height: 18px;
+  opacity: 1 !important;
+  margin: 0 !important;
+  transition: all 0.4s;
+}
+
+.product-color.active { border-color: var(--text-color) !important; }
 
 /* ------------------------------------------------------------ *\
  * UTILITIES - TYPOGRAPHY
