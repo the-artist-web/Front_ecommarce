@@ -165,7 +165,7 @@ if ($sheetsToggler) addEventOnElements($sheetsToggler, "click", function ($elem)
     $sheet.classList.toggle("active");
 });
 
-$overlay.addEventListener("click", () => {
+if ($overlay) $overlay.addEventListener("click", () => {
     $overlay.classList.toggle("active");
 
     $sheetsToggler.forEach($elem => document.querySelector(`${$elem.dataset.sheetsToggler}`).classList.toggle("active"));

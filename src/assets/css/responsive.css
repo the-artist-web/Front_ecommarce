@@ -152,6 +152,16 @@
     .details-section .nav { justify-content: center; }
 
     .details-section .tab-content .tab-pane { padding: 30px; }
+
+    /* FAQs Section */
+    .faqs .contact-us {
+        position: sticky;
+        top: 16px;
+        height: max-content;
+        transition: top 0.4s;
+    }
+
+    .faqs .contact-us.active { top: 96px; }
 }
 
 /**

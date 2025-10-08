@@ -30,9 +30,9 @@
   background-color: var(--bg-color) !important;
   font-size: var(--fs-p) !important;
   font-weight: var(--fw-regular) !important;
-  padding-inline: 12px !important;
+  padding-inline: 14px !important;
   border-radius: var(--rounded-8);
-  min-height: 40px;
+  min-height: 45px;
   transition: all 0.4s;
 }
 
@@ -302,6 +302,16 @@ html[dir="rtl"] .form-box .form-select { padding-inline: 36px 12px !important; }
 }
 
 /* Accordion */
+.accordion .accordion-item { border-color: transparent !important; }
+
+.accordion .accordion-item .accordion-header .accordion-button {
+  background-color: transparent !important;
+  padding-inline: 0 !important;
+  font-size: var(--fs-h4) !important;
+  font-weight: var(--fw-semi-bold) !important;
+  line-height: var(--lh-h4) !important;
+  align-items: start !important;
+}
 
 /* Seperator */
 .seperator {
@@ -487,13 +497,13 @@ html[dir="rtl"] .form-box .form-select { padding-inline: 36px 12px !important; }
   left: -20px;
   right: 0;
   z-index: -1;
-  height: 100px;
+  height: 150px;
   background-color: var(--text-color) !important;
-  transform: rotate(10deg) translateY(-30px);
+  transform: rotate(10deg) translateY(-50px);
   transition: all 0.6s;
 }
 
-.btn.btn-main-outline:hover::before { transform: rotate(10deg) translateY(-150px); }
+.btn.btn-main-outline:hover::before { transform: rotate(10deg) translateY(-250px); }
 
 .btn.btn-tag {
   border: 1.8px solid var(--border-color) !important;
@@ -812,6 +822,47 @@ html[dir="rtl"] .card-collections .card-body .arrow {
 
 .card-cutomer .card-body { padding: 26px; }
 
+.card-team {
+  display: grid;
+  grid-template-rows: 290px max-content;
+  gap: 20px;
+}
+
+.card-team .overflow {
+  overflow: hidden;
+  border-radius: var(--rounded-12); 
+}
+
+.card-team .overflow .img-card { transition: transform 0.4s; }
+
+.card-team .overflow:hover .img-card { transform: scale(1.1); }
+
+.card-team .card-body {
+  display: flex; 
+  align-items: end;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card-customer {
+  border: 2px solid var(--border-color) !important;
+  padding: 30px;
+  border-radius: var(--rounded-12);
+  display: grid;
+  gap: 16px;
+}
+
+.card-customer .circle {
+  background-color: var(--text-color) !important;
+  color: var(--bg-color) !important;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--rounded-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Carousel */
 .carousel-indicators {
   display: flex;
@@ -977,6 +1028,34 @@ html[dir="rtl"] .card-collections .card-body .arrow {
 /* Navbar */
 
 /* Navs & tabs */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin-block-end: 28px !important;
+  padding-inline: 16px !important;
+  margin-inline: -16px !important;
+}
+
+.nav .nav-item .nav-link {
+  font-size: var(--fs-h3) !important;
+  font-weight: var(--fw-semi-bold) !important;
+  line-height: var(--lh-h3) !important;
+  text-wrap: nowrap;
+  border-bottom: 2px solid transparent !important;
+  padding-inline: 0 !important;
+  transition: border-bottom 0.4s;
+}
+
+.nav .nav-item .nav-link.active { border-bottom-color: var(--text-color) !important; }
+
+.tab-content .tab-pane {
+  padding: 20px;
+  border: 2px solid var(--border-color) !important;
+  border-radius: var(--rounded-12);
+}
 
 /* Offcanvas */
 .offcanvas {
