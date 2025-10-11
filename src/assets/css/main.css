@@ -492,3 +492,12 @@ html[dir="rlt"] .footer .input-wrapper .icon-btn {
     padding: 0 !important;
     border-color: transparent !important;
 }
+
+/* Blog Details */
+.blog .photo-attachment {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: calc(100dvh - 130px);
+}

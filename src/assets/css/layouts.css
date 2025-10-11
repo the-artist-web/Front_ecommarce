@@ -863,6 +863,47 @@ html[dir="rtl"] .card-collections .card-body .arrow {
   justify-content: center;
 }
 
+.card-blog {
+  display: grid;
+  grid-template-rows: 300px max-content;
+  gap: 20px;
+}
+
+.card-blog .photo-overflow {
+  border-radius: var(--rounded-12);
+  overflow: hidden;
+}
+
+.card-blog .photo-overflow .photo-card { transition: transform 0.4s; }
+
+.card-blog .photo-overflow:hover .photo-card { transform: scale(1.1); }
+
+.card-blog .card-body {
+  display: grid;
+  gap: 8px;
+}
+
+.card-blog .card-body .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-blog .card-body .wrapper .wrapper-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-blog .card-body .wrapper .wrapper-item svg {
+  color: var(--second-color);
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+}
+
 /* Carousel */
 .carousel-indicators {
   display: flex;
