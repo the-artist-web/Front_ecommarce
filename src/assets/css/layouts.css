@@ -227,6 +227,11 @@ html[dir="rtl"] .form-box .form-select { padding-inline: 36px 12px !important; }
   transition: all 0.4s;
 }
 
+.icon-btn.red {
+  color: red !important;
+  --state-layer-bg: red;
+}
+
 .icon-btn.black:hover {
   background-color: var(--text-color) !important;
   color: var(--bg-color) !important;
@@ -1265,9 +1270,24 @@ html[dir="rtl"] .filter {
   font-size: var(--fs-h5) !important;
   font-weight: var(--fw-regular) !important;
   padding: 8px !important;
+  width: 100%;
+  text-wrap: nowrap;
 }
 
 .table th { font-weight: 600 !important; }
+
+.table-border, th, td {
+  border-color: transparent !important;
+  border-bottom: 2px solid var(--border-color) !important;
+  font-size: var(--fs-h5) !important;
+  font-weight: var(--fw-regular) !important;
+  padding: 8px !important;
+  width: 100%;
+  text-wrap: nowrap;
+  padding: 16px !important;
+}
+
+.table-border th { font-weight: 600 !important; }
 
 /* Line Clamp */
 .line-clamp {
