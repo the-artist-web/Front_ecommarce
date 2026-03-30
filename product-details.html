@@ -484,11 +484,9 @@
                             </li>
 
                             <li>
-                                <button
-                                    type="button"
+                                <a
+                                    href="./shopping-cart.html"
                                     class="icon"
-                                    data-bs-toggle="offcanvas"
-                                    data-bs-target="#shopping-cart"
                                 >
                                     <span
                                         data-bs-toggle="tooltip"
@@ -505,7 +503,7 @@
 
                                         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-bag"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" /><path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg>
                                     </span>
-                                </button>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -566,18 +564,16 @@
                 <div class="state-layer"></div>
             </a>
 
-            <button
-                type="button"
+            <a
+                href="./shopping-cart.html"
                 class="nav-item"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#shopping-cart"
             >
                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-bag"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" /><path d="M9 11v-5a3 3 0 0 1 6 0v5" /></svg>
 
                 <span class="line-clamp line-clamp-1">Cart</span>
 
                 <div class="state-layer"></div>
-            </button>
+            </a>
         </nav>
 
         <!-- MENU -->
@@ -892,39 +888,7 @@
                         </span>
                     </form>
 
-                    <div class="d-flex flex-column gap-4">
-                        <h2 style="font-weight: var(--fw-medium) !important;">Feature keywords Today</h2>
 
-                        <ul class="d-flex flex-wrap align-items-center gap-3">
-                            <li>
-                                <a 
-                                    href="#"
-                                    class="btn btn-tag small rounded-pill"
-                                >Dresses</a>
-                            </li>
-
-                            <li>
-                                <a 
-                                    href="#"
-                                    class="btn btn-tag small rounded-pill"
-                                >Dresses women</a>
-                            </li>
-
-                            <li>
-                                <a 
-                                    href="#"
-                                    class="btn btn-tag small rounded-pill"
-                                >Dresses midi</a>
-                            </li>
-
-                            <li>
-                                <a 
-                                    href="#"
-                                    class="btn btn-tag small rounded-pill"
-                                >Dress summer</a>
-                            </li>
-                        </ul>
-                    </div>
 
                     <div class="d-flex flex-column gap-5">
                         <div class="d-flex flex-column gap-2">
@@ -1383,301 +1347,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- SHOPPING CART -->
-        <aside
-            class="offcanvas offcanvas-end shopping-cart" 
-            id="shopping-cart"
-        >
-            <div class="d-flex align-items-start justify-content-between">
-                <h4>Shopping Cart</h4>
-
-                <button
-                    type="button"
-                    class="icon-btn large"
-                    data-bs-dismiss="offcanvas"
-                >
-                    <span
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="bottom"
-                        data-bs-title="Close"
-                    >
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-                    </span>
-
-                    <div class="state-layer"></div>
-                </button>
-            </div>
-
-            <ul 
-                class="overflow-y-auto overflow-x-hidden custom-scrollbar-hidden py-4"
-                data-emptys="Shopping card"
-            >
-                <li data-rows>
-                    <div class="card-shopping-cart">
-                        <a href="./product-details.html">
-                            <img
-                                src="./src/assets/images/placeholder-img.jpg"
-                                alt=""
-                                loading="lazy"
-                                class="img-card img-cover"
-                            />
-                        </a>
-
-                        <div class="card-body">
-                            <div class="d-flex flex-column gap-3">
-                                <a 
-                                    href="./product-details.html" 
-                                    class="title-card line-clamp line-clamp-1 h5"
-                                >Contrasting sheepskin</a>
-
-                                <h6 class="text-second-color">XL/Blue</h6>
-                            </div>
-
-                            <div class="d-flex flex-column gap-3">
-                                <form 
-                                    action=""
-                                    method="POST"
-                                >
-                                    <button
-                                        type="button"
-                                        class="text-error-color h5"
-                                        style="text-decoration: underline !important;"
-                                        data-remove-rows
-                                    >Remove</button>
-                                </form>
-
-                                <h6 class="text-nowrap">1 X $60.00</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border border-1 border-color w-100 my-4"></div>
-                </li>
-
-                <li data-rows>
-                    <div class="card-shopping-cart">
-                        <a href="./product-details.html">
-                            <img
-                                src="./src/assets/images/placeholder-img.jpg"
-                                alt=""
-                                loading="lazy"
-                                class="img-card img-cover"
-                            />
-                        </a>
-
-                        <div class="card-body">
-                            <div class="d-flex flex-column gap-3">
-                                <a 
-                                    href="./product-details.html" 
-                                    class="title-card line-clamp line-clamp-1 h5"
-                                >Contrasting sheepskin</a>
-
-                                <h6 class="text-second-color">XL/Blue</h6>
-                            </div>
-
-                            <div class="d-flex flex-column gap-3">
-                                <form 
-                                    action=""
-                                    method="POST"
-                                >
-                                    <button
-                                        type="button"
-                                        class="text-error-color h5"
-                                        style="text-decoration: underline !important;"
-                                        data-remove-rows
-                                    >Remove</button>
-                                </form>
-
-                                <h6 class="text-nowrap">1 X $60.00</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border border-1 border-color w-100 my-4"></div>
-                </li>
-
-                <li data-rows>
-                    <div class="card-shopping-cart">
-                        <a href="./product-details.html">
-                            <img
-                                src="./src/assets/images/placeholder-img.jpg"
-                                alt=""
-                                loading="lazy"
-                                class="img-card img-cover"
-                            />
-                        </a>
-
-                        <div class="card-body">
-                            <div class="d-flex flex-column gap-3">
-                                <a 
-                                    href="./product-details.html" 
-                                    class="title-card line-clamp line-clamp-1 h5"
-                                >Contrasting sheepskin</a>
-
-                                <h6 class="text-second-color">XL/Blue</h6>
-                            </div>
-
-                            <div class="d-flex flex-column gap-3">
-                                <form 
-                                    action=""
-                                    method="POST"
-                                >
-                                    <button
-                                        type="button"
-                                        class="text-error-color h5"
-                                        style="text-decoration: underline !important;"
-                                        data-remove-rows
-                                    >Remove</button>
-                                </form>
-
-                                <h6 class="text-nowrap">1 X $60.00</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border border-1 border-color w-100 my-4"></div>
-                </li>
-
-                <li data-rows>
-                    <div class="card-shopping-cart">
-                        <a href="./product-details.html">
-                            <img
-                                src="./src/assets/images/placeholder-img.jpg"
-                                alt=""
-                                loading="lazy"
-                                class="img-card img-cover"
-                            />
-                        </a>
-
-                        <div class="card-body">
-                            <div class="d-flex flex-column gap-3">
-                                <a 
-                                    href="./product-details.html" 
-                                    class="title-card line-clamp line-clamp-1 h5"
-                                >Contrasting sheepskin</a>
-
-                                <h6 class="text-second-color">XL/Blue</h6>
-                            </div>
-
-                            <div class="d-flex flex-column gap-3">
-                                <form 
-                                    action=""
-                                    method="POST"
-                                >
-                                    <button
-                                        type="button"
-                                        class="text-error-color h5"
-                                        style="text-decoration: underline !important;"
-                                        data-remove-rows
-                                    >Remove</button>
-                                </form>
-
-                                <h6 class="text-nowrap">1 X $60.00</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border border-1 border-color w-100 my-4"></div>
-                </li>
-
-                <li data-rows>
-                    <div class="card-shopping-cart">
-                        <a href="./product-details.html">
-                            <img
-                                src="./src/assets/images/placeholder-img.jpg"
-                                alt=""
-                                loading="lazy"
-                                class="img-card img-cover"
-                            />
-                        </a>
-
-                        <div class="card-body">
-                            <div class="d-flex flex-column gap-3">
-                                <a 
-                                    href="./product-details.html" 
-                                    class="title-card line-clamp line-clamp-1 h5"
-                                >Contrasting sheepskin</a>
-
-                                <h6 class="text-second-color">XL/Blue</h6>
-                            </div>
-
-                            <div class="d-flex flex-column gap-3">
-                                <form 
-                                    action=""
-                                    method="POST"
-                                >
-                                    <button
-                                        type="button"
-                                        class="text-error-color h5"
-                                        style="text-decoration: underline !important;"
-                                        data-remove-rows
-                                    >Remove</button>
-                                </form>
-
-                                <h6 class="text-nowrap">1 X $60.00</h6>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-            <div 
-                class="d-flex flex-column gap-4 border-top border-2 border-color" 
-                style="
-                    margin-inline: -20px;
-                    padding: 20px 20px 0;
-                "
-            >
-                <div class="d-flex align-items-center justify-content-between">
-                    <h3>Subtotal</h3>
-
-                    <h3>$186,99</h3>
-                </div>
-
-                <div class="form-checkbox">
-                    <input 
-                        type="checkbox" 
-                        id="terms_of_use"
-                        value="" 
-                        name=""
-                        class="form-check-input" 
-                    />
-
-                    <label 
-                        for="terms_of_use"
-                        class="form-check-label" 
-                    >
-                        I agree with 
-                        <a 
-                            href="./terms-of-use.html" 
-                            class="d-inline border-bottom border-2 border-text-color"
-                        >
-                            <strong>Terms & Conditions</strong>
-                        </a>
-                    </label>
-                </div>
-
-                <div class="d-flex flex-nowrap align-items-center gap-4 py-3">
-                    <a 
-                        href="./shopping-cart.html"
-                        class="btn btn-outline-main large w-100"
-                    >View Cart</a>
-                    
-                    <a 
-                        href="./checkout.html"
-                        class="btn btn-main-outline large w-100"
-                    >Check Out</a>
-                </div>
-
-                <div class="d-flex align-items-center justify-content-center">
-                    <a 
-                        href="./shop.html"
-                        class="text-uppercase p"
-                    >Or continue shopping</a>
-                </div>
-            </div>
-        </aside>
 
         <!-- CATEGORIES -->
         <aside 
@@ -2368,7 +2037,7 @@
                                     <h1 class="title">Stretch Strap Top</h1>
                                 </div>
 
-                                <div class="wrapper">
+                                <!-- <div class="wrapper">
                                     <div class="wrapper-item">
                                         <div class="wrapper-star">
                                             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
@@ -2388,7 +2057,7 @@
 
                                         <h6 class="text-second-color">18 sold in last 32 hours</h6>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <div class="wrapper">
                                     <div class="wrapper-item">
@@ -2405,10 +2074,10 @@
 
                                 <h6 class="text-second-color">The garments labelled as Committed are products that have been produced using sustainable fibres or processes, reducing their environmental impact.</h6>
 
-                                <div class="wrapper-item">
+                                <!-- <div class="wrapper-item">
                                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
                                     <p>28 people are viewing this right now</h6>
-                                </div>
+                                </div> -->
 
                                 <div class="seperator"></div>
 
@@ -2555,11 +2224,11 @@
                                         <h6>Return within 45 days of purchase. Duties & taxes are non-refundable.</h6>
                                     </div>
 
-                                    <button type="button" class="btn-link" data-bs-toggle="modal" data-bs-target="#location">
+                                    <!-- <button type="button" class="btn-link" data-bs-toggle="modal" data-bs-target="#location">
                                         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
                                         
                                         <h6>View Store Information</h6>
-                                    </button>
+                                    </button> -->
                                 </div>
 
                                 <div class="seperator"></div>
@@ -2571,11 +2240,11 @@
                                         <span class="text-second-color">53453412</span>
                                     </div>
                                     
-                                    <div class="wrapper-item h6">
+                                    <!-- <div class="wrapper-item h6">
                                         <b>Vendor:</b>
 
                                         <span class="text-second-color">Modave</span>
-                                    </div>
+                                    </div> -->
                                     
                                     <div class="wrapper-item h6">
                                         <b>Available:</b>
@@ -2637,9 +2306,9 @@
                                 <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button">Description</button>
                             </li>
 
-                            <li class="nav-item" role="presentation">
+                            <!-- <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="customer_reviews-tab" data-bs-toggle="tab" data-bs-target="#customer_reviews" type="button">Customer Reviews</button>
-                            </li>
+                            </li> -->
 
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="shipping_returns-tab" data-bs-toggle="tab" data-bs-target="#shipping_returns" type="button">Shipping & Returns</button>
@@ -2680,164 +2349,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="customer_reviews">
-                                <div class="d-flex flex-wrap align-items-center justify-content-sm-between gap-4 mb-5">
-                                    <h2>03 Comments</h2>
-
-                                    <div class="d-flex align-items-center gap-2">
-                                        <p class="text-nowrap">Sort by:</p>
-
-                                        <div class="form-box">
-                                            <select name="" class="form-select">
-                                                <option value="">Most Recet</option>
-                                                <option value="">Oldest</option>
-                                                <option value="">Most Popular</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <ul class="d-flex flex-column">
-                                    <li class="mb-5">
-                                        <div class="d-flex flex-column gap-4 mb-5">
-                                            <div class="d-flex flex-nowrap align-items-center gap-4">
-                                                <a href="./profile.html" class="avatar large">
-                                                    <!-- <img src="./src/assets/images/placeholder-img.jpg" alt="" loading="lazy" class="img-card img-cover" /> -->
-    
-                                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                </a>
-
-                                                <div class="flex flex-column gap-3">
-                                                    <a href="./profile.html" class="d-flex flex-wrap align-items-center gap-3 h4 hover line-clamp line-clamp-1">
-                                                        Superb quality apparel that exceeds expectations
-                                                        <!-- <span class="badge rounded-pill text-color w-auto" style="background-color: var(--success-color) !important;">
-                                                            Ad publisher
-                                                            <span class="visually-hidden">unread messages</span>
-                                                        </span> -->
-                                                    </a>
-
-                                                    <div class="d-flex flex-wrap align-items-center gap-2">
-                                                        <h6 class="text-second-color">1 days ago -</h6>
-
-                                                        <a href="#reply" class="hover h6">reply</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <h6 class="text-second-color">Great theme - we were looking for a theme with lots of built in features and flexibility and this was perfect. We expected to need to employ a developer to add a few finishing touches. But we actually managed to do everything ourselves. We did have one small query and the support given was swift and helpful.</h6>
-                                        </div>
-
-                                        <ul class="d-flex flex-column" style="padding-inline-start: 50px !important; border-inline-start: 3px solid var(--border-color) !important;">
-                                            <li>
-                                                <div class="d-flex flex-column gap-4 mb-5">
-                                                    <div class="d-flex flex-nowrap align-items-center gap-4">
-                                                        <a href="./profile.html" class="avatar large">
-                                                            <!-- <img src="./src/assets/images/placeholder-img.jpg" alt="" loading="lazy" class="img-card img-cover" /> -->
-            
-                                                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                        </a>
-
-                                                        <div class="flex flex-column gap-3">
-                                                            <a href="./profile.html" class="d-flex flex-wrap align-items-center gap-3 h4 hover line-clamp line-clamp-1">
-                                                                Superb quality apparel that exceeds expectations
-                                                                <span class="badge rounded-pill text-color w-auto" style="background-color: var(--success-color) !important;">
-                                                                    Ad publisher
-                                                                    <span class="visually-hidden">unread messages</span>
-                                                                </span>
-                                                            </a>
-
-                                                            <div class="d-flex flex-wrap align-items-center gap-2">
-                                                                <h6 class="text-second-color">1 days ago -</h6>
-
-                                                                <a href="#reply" class="hover h6">reply</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <h6 class="text-second-color">Great theme - we were looking for a theme with lots of built in features and flexibility and this was perfect. We expected to need to employ a developer to add a few finishing touches. But we actually managed to do everything ourselves. We did have one small query and the support given was swift and helpful.</h6>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </li>                                    
-                                    
-                                    <li class="mb-5">
-                                        <div class="d-flex flex-column gap-4 mb-5">
-                                            <div class="d-flex flex-nowrap align-items-center gap-4">
-                                                <a href="./profile.html" class="avatar large">
-                                                    <!-- <img src="./src/assets/images/placeholder-img.jpg" alt="" loading="lazy" class="img-card img-cover" /> -->
-    
-                                                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                                                </a>
-
-                                                <div class="flex flex-column gap-3">
-                                                    <a href="./profile.html" class="d-flex flex-wrap align-items-center gap-3 h4 hover line-clamp line-clamp-1">
-                                                        Superb quality apparel that exceeds expectations
-                                                        <!-- <span class="badge rounded-pill text-color w-auto" style="background-color: var(--success-color) !important;">
-                                                            Ad publisher
-                                                            <span class="visually-hidden">unread messages</span>
-                                                        </span> -->
-                                                    </a>
-
-                                                    <div class="d-flex flex-wrap align-items-center gap-2">
-                                                        <h6 class="text-second-color">1 days ago -</h6>
-
-                                                        <a href="#reply" class="hover h6">reply</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <h6 class="text-second-color">Great theme - we were looking for a theme with lots of built in features and flexibility and this was perfect. We expected to need to employ a developer to add a few finishing touches. But we actually managed to do everything ourselves. We did have one small query and the support given was swift and helpful.</h6>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <form action="" method="POST" id="reply" class="d-grid gap-5">
-                                    <h2>Add Comment</h2>
-
-                                    <div class="form-box">
-                                        <label for="Review Title" class="form-label">Review Title</label>
-
-                                        <input type="text" placeholder="Give your review a title" name="" value="" id="Review Title" class="form-control" />
-
-                                        <div class="validation"></div>
-                                    </div>
-
-                                    <div class="form-box">
-                                        <label for="Review" class="form-label">Review</label>
-                                        
-                                        <textarea name="" id="Review" rows="4" placeholder="Write your comment here" class="form-control"></textarea>
-
-                                        <div class="validation"></div>
-                                    </div>
-
-                                    <div class="row row-cols-1 row-cols-lg-2 g-4">
-                                        <div class="col">
-                                            <div class="form-box">
-                                                <input type="text" placeholder="You Name (Public)" name="" value="" class="form-control" />
-
-                                                <div class="validation"></div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col">
-                                            <div class="form-box">
-                                                <input type="text" placeholder="Your email (private)" name="" value="" class="form-control" />
-
-                                                <div class="validation"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-checkbox">
-                                        <input type="checkbox" id="save_my_name_&&&" value="" name="" class="form-check-input" />
-
-                                        <label for="save_my_name_&&&" class="form-check-label">Save my name, email, and website in this browser for the next time I comment.</label>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-main-outline large rounded-pill text-uppercase" style="width: max-content;">Submit Reviews</button>
-                                </form>
                             </div>
 
                             <div class="tab-pane fade" id="shipping_returns">
